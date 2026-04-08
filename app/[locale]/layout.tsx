@@ -1,50 +1,49 @@
-import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getMessages } from "next-intl/server";
-import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
-import "../globals.css";
-import Navbar from "@/components/sections/Navbar";
+import type { Metadata } from 'next'
+import { Wix_Madefor_Text } from 'next/font/google'
+import { NextIntlClientProvider } from 'next-intl'
+import { getMessages } from 'next-intl/server'
+import { notFound } from 'next/navigation'
+import { routing } from '@/i18n/routing'
+import { Navbar } from '@/components/layout/Navbar'
+import { Footer } from '@/components/layout/Footer'
+import '../globals.css'
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
+const wix = Wix_Madefor_Text({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-wix',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: "ATBA Studio — Digital Studio",
+  title: 'ATBA Studio | Estudio Digital Boutique',
   description:
-    "ATBA Studio is a modern digital studio that builds high-quality web experiences and digital products.",
-};
+    'Un estudio boutique dedicado a transformar visiones complejas en experiencias táctiles, rápidas y emocionalmente inteligentes.',
+}
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
+type Props = {
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
+}
 
-  const messages = await getMessages();
+export default async function LocaleLayout({ children, params }: Props) {
+  const { locale } = await params
+
+  if (!routing.locales.includes(locale as 'en' | 'es')) {
+    notFound()
+  }
+
+  const messages = await getMessages()
 
   return (
-    <html lang={locale} className={`${playfair.variable} ${inter.variable}`}>
-      <body>
+    <html lang={locale} className={wix.variable}>
+      <body className="font-body antialiased text-on-surface bg-white">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          {children}
+          <main>{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
-  );
+  )
 }

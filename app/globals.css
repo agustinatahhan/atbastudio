@@ -1,31 +1,66 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-bg: #f5f2ee;
-  --color-brand-dark: #1a1714;
-  --color-brand-accent: #8fb4c0;
+  /* Brand colors */
+  --color-primary: #fe945c;
+  --color-secondary: #99a4b3;
+  --color-accent: #ebffb1;
+  --color-brand-orange: #fe945c;
+  --color-brand-gray: #99a4b3;
+  --color-brand-lime: #ebffb1;
+  --color-surface: #f6f6f6;
+  --color-on-surface: #2d2f2f;
 
-  --font-heading: var(--font-playfair);
-  --font-body: var(--font-inter);
+  /* Font families — populated by CSS vars injected via next/font */
+  --font-display: var(--font-wix), sans-serif;
+  --font-body: var(--font-wix), sans-serif;
 }
 
-* {
-  box-sizing: border-box;
+@layer base {
+  h1 {
+    @apply font-display text-5xl md:text-7xl font-bold tracking-tight leading-tight;
+  }
+  h2 {
+    @apply font-display text-3xl md:text-5xl font-bold tracking-tight;
+  }
+  h3 {
+    @apply font-display text-xl md:text-2xl font-semibold;
+  }
+  h4 {
+    @apply font-display text-lg font-semibold;
+  }
+  p {
+    @apply font-body text-base md:text-lg leading-relaxed text-gray-600;
+  }
+  span {
+    @apply font-body;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+@layer components {
+  .container-site {
+    @apply mx-auto px-6 md:px-12 lg:px-14 max-w-7xl;
+  }
 }
 
-body {
-  background-color: #f5f2ee;
-  color: #1a1714;
-  font-family: var(--font-inter), system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@layer utilities {
+  .text-gradient-primary {
+    background: linear-gradient(135deg, #964311 0%, #fe945c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-::selection {
-  background-color: #8fb4c0;
-  color: #1a1714;
+  .mesh-gradient-bg {
+    background-color: #ffffff;
+    background-image:
+      radial-gradient(at 0% 0%, rgba(254, 148, 92, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(235, 255, 177, 0.2) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(150, 67, 17, 0.1) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(232, 252, 174, 0.2) 0px, transparent 50%);
+  }
+
+  .services-gradient {
+    background: linear-gradient(180deg, #e0f2fe 0%, rgba(254, 148, 92, 0.08) 100%);
+  }
 }

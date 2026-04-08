@@ -1,115 +1,181 @@
 {
-  "nav": {
+  "Nav": {
     "services": "Services",
-    "work": "Work",
-    "process": "Process",
+    "projects": "Projects",
+    "contact": "Contact",
     "about": "About",
-    "cta": "Get in touch"
+    "cta": "Let's talk"
   },
-  "hero": {
-    "headline1": "We craft digital",
-    "headline2": "experiences that",
-    "headline3": "matter.",
-    "description": "We are a digital studio building high-quality web products, thoughtful interfaces, and custom software solutions.",
-    "ctaPrimary": "View our work",
-    "ctaSecondary": "Start a project"
-  },
-  "services": {
-    "label": "What we do",
-    "headline1": "Digital solutions",
-    "headline2": "for visionary brands.",
-    "webDev": {
-      "title": "Web Development",
-      "description": "Fast, scalable, and beautifully engineered web applications. We build with modern frameworks to deliver experiences that perform.",
-      "tags": ["Next.js", "React", "TypeScript", "Node.js", "Wordpress"]
+  "Home": {
+    "Hero": {
+      "label": "Digital Studio",
+      "title1": "Design",
+      "titleHighlight": "and development of",
+      "title2": "digital experiences.",
+      "subtitle": "Turning complex ideas into simple, fast, and user-friendly products.",
+      "ctaPrimary": "View our work",
+      "ctaSecondary": "Start a project"
     },
-    "productDesign": {
-      "title": "Product Design",
-      "description": "Design rooted in usability and refined aesthetics. From wireframes to polished interfaces, we shape products people love to use.",
-      "tags": ["UI/UX", "Figma", "Prototyping", "Design Systems"]
+    "About": {
+      "label": "Our vision",
+      "quote": "If you can dream it, we can build it.",
+      "body": "Our approach focuses on creating personalized, human-centered, and technically excellent solutions. We believe every line of code must have a strategic purpose to drive your business forward.",
+      "differentiatorLabel": "What sets us apart",
+      "differentiatorHeadline": "Design, creativity, and problem solving — all in one team.",
+      "differentiatorBody": "We don't just build things that look good. We combine sharp design instincts, creative thinking, and structured problem solving to craft digital products that perform as well as they look.",
+      "pillar1Title": "Design",
+      "pillar1Desc": "Every pixel is intentional. We create interfaces that are not only visually compelling but deeply intuitive for the people using them.",
+      "pillar2Title": "Creativity",
+      "pillar2Desc": "We approach every project with fresh eyes — no templates, no shortcuts. Each solution is crafted specifically for your product and your users.",
+      "pillar3Title": "Problem Solving",
+      "pillar3Desc": "We dig into the real challenge behind every brief. From architecture to UX decisions, we think clearly so the final product truly works."
     },
-    "softwareSolutions": {
-      "title": "Software Solutions",
-      "description": "Custom software tailored to your business needs. From internal tools to complex platforms, we build solutions that scale with you.",
-      "tags": ["Architecture", "APIs", "Integrations", "Platforms"]
+    "Services": {
+      "label": "Services",
+      "headline": "What we build",
+      "card1Title": "Web Development",
+      "card1Desc": "We design and build fast, scalable web applications with impeccable user experience.",
+      "card2Title": "UX/UI Design",
+      "card2Desc": "We create intuitive, visually powerful interfaces that connect with users and elevate your digital product.",
+      "card3Title": "Custom Software",
+      "card3Desc": "We build personalized technological solutions tailored exactly to your business processes and goals."
+    },
+    "Projects": {
+      "label": "Selected Projects",
+      "headline1": "Our latest",
+      "headline2": "work.",
+      "viewAll": "View all projects",
+      "guia": {
+        "title": "Gastronomic Guide",
+        "category": "Food & Culture / Web",
+        "description": "A food guide celebrating Dominican cuisine — restaurants, recipes, and the stories behind every dish."
+      },
+      "photoscape": {
+        "title": "Photoscape",
+        "category": "Photography / Portfolio",
+        "description": "A landscaping portfolio where the images do the talking — minimal, spacious, and fully immersive."
+      }
+    },
+    "CTA": {
+      "headline1": "Ready to build the",
+      "headline2": "next level?",
+      "body": "We are scheduling projects for 2025. Let's talk about your vision.",
+      "cta": "Start a project"
     }
   },
-  "projects": {
-    "label": "Selected work",
-    "headline1": "Projects we're",
-    "headline2": "proud of.",
-    "description": "A selection of recent work across web development, design, and digital experiences.",
-    "viewProject": "View project",
-    "guia": {
-      "description": "A food guide celebrating Dominican cuisine — restaurants, recipes, and the stories behind every dish."
+  "Proyectos": {
+    "Header": {
+      "badge": "Portfolio",
+      "title": "Our Projects",
+      "subtitle": "We build high-impact digital solutions that blend flawless aesthetics with cutting-edge technology.",
+      "filterAll": "All",
+      "filterWeb": "Web",
+      "filterDesign": "Design",
+      "filterSoftware": "Software"
     },
-    "learn": {
-      "description": "Informational website for an e-learning platform — clean, accessible, and designed to communicate value from the first scroll."
-    },
-    "neuro": {
-      "description": "A clean, conversion-focused store for playful and educational products — no clutter, just what matters."
-    },
-    "photoscape": {
-      "description": "A landscaping portfolio where the images do the talking — minimal, spacious, and fully immersive."
-    },
-    "m4life": {
-      "description": "Website for a startup bringing innovative microbiological solutions to market."
+    "Grid": {
+      "viewStudy": "View case study",
+      "guia": {
+        "title": "Gastronomic Guide",
+        "category": "Food & Culture / Web",
+        "description": "A food guide celebrating Dominican cuisine — restaurants, recipes, and the stories behind every dish."
+      },
+      "learn": {
+        "title": "LearnHub",
+        "category": "E-learning / Web",
+        "description": "Informational website for an e-learning platform — clean, accessible, and designed to communicate value from the first scroll."
+      },
+      "neuro": {
+        "title": "NeuroPlay",
+        "category": "E-commerce / Design",
+        "description": "A clean, conversion-focused store for playful and educational products — no clutter, just what matters."
+      },
+      "photoscape": {
+        "title": "Photoscape",
+        "category": "Photography / Design",
+        "description": "A landscaping portfolio where the images do the talking — minimal, spacious, and fully immersive."
+      },
+      "m4life": {
+        "title": "M4Life",
+        "category": "Biotech / Web",
+        "description": "Website for a startup bringing innovative microbiological solutions to market."
+      },
+      "ctaHeadline": "Ready to build something great?",
+      "ctaBody": "We transform your vision into a tangible digital reality. Let's talk about your next challenge.",
+      "ctaBtn": "Write to us now"
     }
   },
-  "about": {
-    "label": "About us",
-    "headline": "Who we are.",
-    "paragraph1": "ATBA Studio is a digital studio specializing in web development, product design, and custom software solutions. We partner with founders, startups, and growing businesses to bring their ideas to life with precision and purpose.",
-    "paragraph2": "We are a small team, which means you get our full attention on every project. No account managers, no handoffs. Just direct collaboration from start to finish.",
-    "pillar1Title": "Focused",
-    "pillar1Description": "We take on a limited number of projects at a time to give each one the attention it deserves.",
-    "pillar2Title": "End-to-end",
-    "pillar2Description": "From design to deployment, we handle the full lifecycle of your product.",
-    "pillar3Title": "Built to last",
-    "pillar3Description": "We build with clean code and scalable architecture so your product grows with you."
+  "Contacto": {
+    "Header": {
+      "title1": "Let's talk. Tell us about your next",
+      "titleHighlight": "great project.",
+      "subtitle": "We're ready to transform your ideas into exceptional digital experiences. Join the list of companies that trust ATBA Studio."
+    },
+    "Form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "hello@yourcompany.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us about your goals and timelines...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "sent": "Message sent!",
+      "error": "Something went wrong. Please try again.",
+      "infoTitle": "Contact Info",
+      "email": "atbastudio@gmail.com",
+      "locationTitle": "Location",
+      "location": "Buenos Aires, Argentina",
+      "budgetCta": "Request a quote",
+      "budgetNote": "Guaranteed response within 24 hours."
+    }
   },
-  "process": {
-    "label": "How we work",
-    "headline1": "A clear process from",
-    "headline2": "idea to launch.",
-    "step1Title": "Discovery",
-    "step1Description": "We start by understanding your goals, audience, and context. Through focused conversations and research, we map out what success looks like for your project.",
-    "step2Title": "Strategy & Design",
-    "step2Description": "We define the scope, architecture, and design direction. Wireframes and design systems take shape before a single line of code is written.",
-    "step3Title": "Build & Iterate",
-    "step3Description": "We develop with precision and speed. You're involved throughout — regular reviews, live previews, and clear communication keep everything on track.",
-    "step4Title": "Launch & Support",
-    "step4Description": "We handle deployment, performance tuning, and go-live. Post-launch, we stay close to help you iterate and grow as your product evolves."
+  "SobreNosotros": {
+
+    "Body": {
+      "heroHeadline": "We design the future,",
+      "heroHighlight": "pixel by pixel.",
+      "heroBody": "We are a boutique studio focused on elevating digital brands through thoughtful design and cutting-edge technology. We care deeply about every detail.",
+      "col1Label": "Who We Are",
+      "whoText": "We are a design and development team passionate about turning ideas into real, functional products with exceptional design. We partner with founders, startups, and growing businesses to bring their ideas to life with precision and purpose.",
+      "col2Label": "Mission",
+      "missionBody": "We help our clients achieve their strategic goals through cutting-edge technology and user-centered design. Every project is an opportunity to create something that truly matters.",
+      "col3Label": "Vision",
+      "col3Text": "To be the global benchmark for functional aesthetics, fusing art with engineering to set tomorrow's digital standard.",
+      "differentiatorLabel": "What sets us apart",
+      "differentiatorHeadline": "Design, creativity, and problem solving — all in one team.",
+      "differentiatorBody": "We don't just build things that look good. We combine sharp design instincts, creative thinking, and structured problem solving to craft digital products that perform as well as they look.",
+      "diff1Title": "Design",
+      "diff1Desc": "Every pixel is intentional. We create interfaces that are not only visually compelling but deeply intuitive for the people using them.",
+      "diff2Title": "Creativity",
+      "diff2Desc": "We approach every project with fresh eyes — no templates, no shortcuts. Each solution is crafted specifically for your product and your users.",
+      "diff3Title": "Problem Solving",
+      "diff3Desc": "We dig into the real challenge behind every brief. From architecture to UX decisions, we think clearly so the final product truly works.",
+      "teamHeadline": "Our Team",
+      "teamSubheadline": "The creative minds behind every line of code.",
+      "member1Role": "Founder & Design Lead",
+      "member1Name": "Name Placeholder",
+      "member1Bio": "Design visionary who believes simplicity is the ultimate sophistication.",
+      "member2Role": "CTO & Core Developer",
+      "member2Name": "Name Placeholder",
+      "member2Bio": "Systems architect turning complex ideas into scalable, elegant reality.",
+      "missionHeadline": "We love hearing new ideas.",
+      "ctaHeadline1": "Ready to see what",
+      "ctaHeadline2": "we've built?",
+      "ctaBtn": "View our projects"
+    }
   },
-  "contact": {
-    "label": "Get in touch",
-    "headline1": "Let's build something",
-    "headline2": "great together.",
-    "description": "Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you within 24 hours.",
-    "email": "atbastudio@gmail.com",
-    "namePlaceholder": "Your name",
-    "emailPlaceholder": "your@email.com",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "subjectPlaceholder": "What's this about?",
-    "messageLabel": "Message",
-    "messagePlaceholder": "Tell us about your project...",
-    "emailError": "Please enter a valid email address.",
-    "submit": "Send message",
-    "sending": "Sending...",
-    "sent": "Message sent!",
-    "error": "Something went wrong. Please try again."
-  },
-  "footer": {
+  "Footer": {
     "tagline": "A modern digital studio building high-quality web experiences and digital products.",
     "navigation": "Navigation",
-    "contact": "Contact",
-    "copyright": "All rights reserved.",
-    "crafted": "Crafted with care.",
     "services": "Services",
-    "work": "Work",
-    "process": "Process",
-    "about": "About"
+    "projects": "Projects",
+    "contact": "Contact",
+    "about": "About",
+    "social": "Social",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "All rights reserved."
   }
 }

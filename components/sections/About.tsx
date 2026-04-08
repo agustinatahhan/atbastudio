@@ -1,114 +1,125 @@
-"use client";
+'use client'
 
-import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
-import Container from "@/components/ui/Container";
-import Section from "@/components/ui/Section";
+import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
+import Image from 'next/image'
+import { RiStarLine, RiPaletteLine, RiLightbulbLine, RiToolsLine } from 'react-icons/ri'
+import { fadeUp, staggerContainer } from '@/lib/animations'
 
-const pillarKeys = [
-  { key: "pillar1", number: "01" },
-  { key: "pillar2", number: "02" },
-  { key: "pillar3", number: "03" },
-] as const;
+const pillars = [
+  { icon: RiPaletteLine, titleKey: 'pillar1Title' as const, descKey: 'pillar1Desc' as const },
+  { icon: RiLightbulbLine, titleKey: 'pillar2Title' as const, descKey: 'pillar2Desc' as const },
+  { icon: RiToolsLine, titleKey: 'pillar3Title' as const, descKey: 'pillar3Desc' as const },
+]
 
-export default function About() {
-  const t = useTranslations("about");
+export function About() {
+  const t = useTranslations('Home.About')
 
   return (
-    <Section id="about" className="bg-brand-bg border-t border-brand-dark/8">
-      <Container>
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          {/* Left */}
-          <div className="">
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-xs tracking-[0.25em] uppercase text-brand-dark/40 mb-6"
-            >
-              {t("label")}
-            </motion.p>
+    <>
+      {/* Vision / Quote Section */}
+      <section className="py-24 md:py-32 text-center px-6">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <motion.div variants={fadeUp} className="flex justify-center mb-8">
+              <span className="text-4xl text-primary">
+                <RiStarLine />
+              </span>
+            </motion.div>
+
             <motion.h2
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-normal text-brand-dark leading-tight mb-8"
-              style={{
-                fontFamily: "var(--font-playfair)",
-                fontSize: "clamp(2rem, 4vw, 3.5rem)",
-              }}
+              variants={fadeUp}
+              className="font-body italic text-4xl md:text-6xl font-bold text-on-surface leading-tight mb-10"
             >
-              {t("headline")}
+              {t('quote')}
             </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.18 }}
-              className="text-base text-brand-dark/65 leading-relaxed mb-5"
-            >
-              {t("paragraph1")}
+
+            <motion.p variants={fadeUp} className="max-w-3xl mx-auto text-secondary text-lg md:text-xl leading-relaxed">
+              {t('body')}
             </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.24 }}
-              className="text-base text-brand-dark/65 leading-relaxed"
-            >
-              {t("paragraph2")}
-            </motion.p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* What sets us apart */}
+      <section className="py-24 md:py-32 bg-surface">
+        <div className="container-site">
+          {/* Top: text + image */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+            <div>
+              <motion.span
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-xs font-bold tracking-widest uppercase text-primary mb-6"
+              >
+                {t('differentiatorLabel')}
+              </motion.span>
+
+              <motion.h2
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="mb-6"
+              >
+                {t('differentiatorHeadline')}
+              </motion.h2>
+
+              <motion.p
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+              >
+                {t('differentiatorBody')}
+              </motion.p>
+            </div>
+
+            <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/home/home3.png"
+                alt=""
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
 
-          {/* Right — pillars */}
-          <div className="flex flex-col gap-0 divide-y divide-brand-dark/8">
-            {pillarKeys.map(({ key, number }, idx) => (
-              <motion.div
-                key={key}
-                whileHover={{ x: 4 }}
-                transition={{ duration: 0.25 }}
-                className="flex gap-6 items-start py-8 group cursor-default"
+          {/* Pillar cards */}
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          >
+            {pillars.map(({ icon: Icon, titleKey, descKey }) => (
+              <div
+                key={titleKey}
+                className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:-translate-y-1 transition-transform duration-300"
               >
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: idx * 0.12 }}
-                  className="text-xs tracking-[0.2em] text-brand-accent shrink-0 mt-1 font-medium"
-                >
-                  {number}
-                </motion.span>
-                <div>
-                  <motion.h3
-                    initial={{ opacity: 0, y: 8 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: idx * 0.12 + 0.08 }}
-                    className="font-normal text-brand-dark mb-2 group-hover:text-brand-dark/70 transition-colors"
-                    style={{
-                      fontFamily: "var(--font-playfair)",
-                      fontSize: "1.2rem",
-                    }}
-                  >
-                    {t(`${key}Title`)}
-                  </motion.h3>
-                  <motion.p
-                    initial={{ opacity: 0, y: 8 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: idx * 0.12 + 0.15 }}
-                    className="text-sm text-brand-dark/60 leading-relaxed"
-                  >
-                    {t(`${key}Description`)}
-                  </motion.p>
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <Icon className="text-xl text-primary" />
                 </div>
-              </motion.div>
+                <motion.h3 variants={fadeUp} className="mb-3">
+                  {t(titleKey)}
+                </motion.h3>
+                <motion.p variants={fadeUp} className="text-base">
+                  {t(descKey)}
+                </motion.p>
+              </div>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </Container>
-    </Section>
-  );
+      </section>
+    </>
+  )
 }

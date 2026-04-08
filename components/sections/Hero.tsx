@@ -2,106 +2,74 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import Container from "@/components/ui/Container";
-import Button from "@/components/ui/Button";
+import Image from "next/image";
+import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
+import { fadeUp, staggerContainer } from "@/lib/animations";
 
-const sentence = {
-  hidden: { opacity: 1 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.012, delayChildren: 0.3 },
-  },
-};
-
-const letter = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" as const },
-  },
-};
-
-export default function Hero() {
-  const t = useTranslations("hero");
-  const headlines = [t("headline1"), t("headline2"), t("headline3")];
+export function Hero() {
+  const t = useTranslations("Home.Hero");
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-brand-bg">
-      {/* Sophisticated gradient background */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 75% 55% at 95% 5%, rgba(143,180,192,0.14) 0%, transparent 65%), radial-gradient(ellipse 55% 45% at 5% 95%, rgba(143,180,192,0.09) 0%, transparent 60%)",
-        }}
+    <section className="relative overflow-hidden ">
+      {/* Background image */}
+      <Image
+        src="/home/home3.png"
+        alt=""
+        fill
+        className="object-cover"
+        priority
+        sizes="100vw"
       />
 
-      <Container className="relative z-10 pt-32 pb-20">
-        <div className="flex flex-col items-center text-center md:items-start md:text-left max-w-4xl md:mx-0 mx-auto">
-          {/* Eyebrow */}
-          {/* <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            className="text-xs tracking-[0.3em] uppercase text-brand-dark/40 mb-8"
-          >
-            ATBA Studio
-          </motion.p> */}
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/50" />
 
-          {/* Headline */}
-          <h1
-            className="font-normal text-4xl md:text-5xl lg:text-7xl leading-[1.05] tracking-tight text-brand-dark mb-8"
-            style={{ fontFamily: "var(--font-playfair)" }}
-          >
-            {headlines.map((line, lineIdx) => (
-              <motion.span
-                key={lineIdx}
-                className="block overflow-hidden"
-                variants={sentence}
-                initial="hidden"
-                animate="visible"
-              >
-                {line.split("").map((char, charIdx) => (
-                  <motion.span
-                    key={charIdx}
-                    variants={letter}
-                    className="inline-block"
-                    style={{ whiteSpace: char === " " ? "pre" : "normal" }}
-                  >
-                    {char}
-                  </motion.span>
-                ))}
-              </motion.span>
-            ))}
-          </h1>
+      {/* Content */}
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        animate="visible"
+        className="relative z-10 text-center max-w-5xl mx-auto px-6 py-32 md:py-44"
+      >
+        {/* Badge label */}
+        <motion.span
+          variants={fadeUp}
+          className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold tracking-widest uppercase text-white mb-8"
+        >
+          {t("label")}
+        </motion.span>
 
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.9 }}
-            className="text-base md:text-lg text-brand-dark/60 max-w-md leading-relaxed mb-12"
-          >
-            {t("description")}
-          </motion.p>
+        {/* H1 */}
+        <motion.h1 variants={fadeUp} className="mb-8 text-white">
+          {t("title1")} {t("titleHighlight")} {t("title2")}
+        </motion.h1>
 
-          {/* CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 1.1 }}
-            className="flex flex-wrap justify-center md:justify-start items-center gap-4"
-          >
-            <Button href="#work" variant="primary">
+        {/* Subtitle */}
+        <motion.p
+          variants={fadeUp}
+          className="max-w-2xl mx-auto text-white/80 mb-12 text-lg"
+        >
+          {t("subtitle")}
+        </motion.p>
+
+        {/* CTAs */}
+        <motion.div
+          variants={fadeUp}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <Link href="/proyectos">
+            <Button variant="primary" size="lg">
               {t("ctaPrimary")}
             </Button>
-            <Button href="#contact" variant="outline">
+          </Link>
+          {/* <Link href="/contacto">
+            <Button variant="outline" size="lg">
               {t("ctaSecondary")}
             </Button>
-          </motion.div>
-        </div>
-      </Container>
+          </Link> */}
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

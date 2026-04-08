@@ -1,115 +1,181 @@
 {
-  "nav": {
+  "Nav": {
     "services": "Servicios",
-    "work": "Trabajo",
-    "process": "Proceso",
+    "projects": "Proyectos",
+    "contact": "Contacto",
     "about": "Nosotros",
-    "cta": "Contáctanos"
+    "cta": "Hablemos"
   },
-  "hero": {
-    "headline1": "Creamos experiencias",
-    "headline2": "digitales que",
-    "headline3": "importan.",
-    "description": "Somos un estudio digital que construye productos web de alta calidad, interfaces cuidadas y soluciones de software a medida.",
-    "ctaPrimary": "Ver nuestro trabajo",
-    "ctaSecondary": "Iniciar un proyecto"
-  },
-  "services": {
-    "label": "Lo que hacemos",
-    "headline1": "Soluciones digitales",
-    "headline2": "para marcas con visión.",
-    "webDev": {
-      "title": "Desarrollo Web",
-      "description": "Aplicaciones web rápidas, escalables y bien construidas. Trabajamos con frameworks modernos para entregar experiencias que rinden.",
-      "tags": ["Next.js", "React", "TypeScript", "Node.js"]
+  "Home": {
+    "Hero": {
+      "label": "Estudio Digital",
+      "title1": "Diseño y",
+      "titleHighlight": "desarrollo de",
+      "title2": "experiencias digitales",
+      "subtitle": "Transformamos ideas complejas en productos simples, rápidos y fáciles de usar.",
+      "ctaPrimary": "Ver nuestro trabajo",
+      "ctaSecondary": "Iniciar un proyecto"
     },
-    "productDesign": {
-      "title": "Diseño de Producto",
-      "description": "Diseño centrado en la usabilidad y la estética refinada. Desde wireframes hasta interfaces pulidas, creamos productos que la gente ama usar.",
-      "tags": ["UI/UX", "Figma", "Prototipado", "Sistemas de diseño"]
+    "About": {
+      "label": "Nuestra visión",
+      "quote": "If you can dream it, we can build it.",
+      "body": "Nuestro enfoque se centra en crear soluciones personalizadas, humanas y técnicamente excelentes. Creemos que cada línea de código debe tener un propósito estratégico para impulsar tu negocio hacia el futuro.",
+      "differentiatorLabel": "Por qué elegirnos",
+      "differentiatorHeadline": "Diseño, creatividad y resolución de problemas — en un solo equipo.",
+      "differentiatorBody": "No solo construimos cosas que se ven bien. Combinamos instinto de diseño, pensamiento creativo y resolución estructurada de problemas para crear productos digitales que rinden tanto como se ven.",
+      "pillar1Title": "Diseño",
+      "pillar1Desc": "Cada pixel es intencional. Creamos interfaces que no solo son visualmente atractivas, sino profundamente intuitivas para quienes las usan.",
+      "pillar2Title": "Creatividad",
+      "pillar2Desc": "Abordamos cada proyecto con ojos frescos — sin plantillas, sin atajos. Cada solución está pensada específicamente para tu producto y tus usuarios.",
+      "pillar3Title": "Resolución de Problemas",
+      "pillar3Desc": "Nos metemos en el desafío real detrás de cada pedido. Desde la arquitectura hasta las decisiones de UX, pensamos con claridad para que el producto final realmente funcione."
     },
-    "softwareSolutions": {
-      "title": "Soluciones de Software",
-      "description": "Software a medida adaptado a las necesidades de tu negocio. Desde herramientas internas hasta plataformas complejas, construimos soluciones que escalan contigo.",
-      "tags": ["Arquitectura", "APIs", "Integraciones", "Plataformas"]
+    "Services": {
+      "label": "Servicios",
+      "headline": "Lo que construimos",
+      "card1Title": "Desarrollo Web",
+      "card1Desc": "Diseñamos y desarrollamos sitios y aplicaciones web rápidas, escalables y con una experiencia de usuario impecable.",
+      "card2Title": "Diseño UX/UI",
+      "card2Desc": "Creamos interfaces intuitivas y visualmente poderosas que conectan con los usuarios y elevan tu producto digital.",
+      "card3Title": "Software a Medida",
+      "card3Desc": "Construimos soluciones tecnológicas personalizadas adaptadas exactamente a los procesos y objetivos de tu negocio."
+    },
+    "Projects": {
+      "label": "Proyectos Destacados",
+      "headline1": "Nuestros trabajos",
+      "headline2": "más recientes.",
+      "viewAll": "Ver todos los proyectos",
+      "guia": {
+        "title": "Guía Gastronómica",
+        "category": "Gastronomía / Web",
+        "description": "Una guía gastronómica que celebra la cocina dominicana — restaurantes, recetas y las historias detrás de cada plato."
+      },
+      "photoscape": {
+        "title": "Photoscape",
+        "category": "Fotografía / Portafolio",
+        "description": "Portfolio de paisajismo donde las imágenes hablan primero — minimal, espacioso y completamente inmersivo."
+      }
+    },
+    "CTA": {
+      "headline1": "¿Listo para construir el",
+      "headline2": "siguiente nivel?",
+      "body": "Estamos agendando proyectos para 2025. Hablemos sobre tu visión.",
+      "cta": "Iniciar proyecto"
     }
   },
-  "projects": {
-    "label": "Nuestro Trabajo",
-    "headline1": "Proyectos de los que",
-    "headline2": "estamos orgullosos.",
-    "description": "Una selección de trabajo reciente en desarrollo web, diseño y experiencias digitales.",
-    "viewProject": "Ver proyecto",
-    "guia": {
-      "description": "Una guía gastronómica que celebra la cocina dominicana — restaurantes, recetas y las historias detrás de cada plato."
+  "Proyectos": {
+    "Header": {
+      "badge": "Portafolio",
+      "title": "Nuestros Proyectos",
+      "subtitle": "Construimos soluciones digitales de alto impacto que fusionan estética impecable con rendimiento tecnológico de vanguardia.",
+      "filterAll": "Todos",
+      "filterWeb": "Web",
+      "filterDesign": "Diseño",
+      "filterSoftware": "Software"
     },
-    "learn": {
-      "description": "Sitio web informativo para una plataforma de e-learning — clara, accesible y diseñada para comunicar valor desde el primer scroll."
-    },
-    "neuro": {
-      "description": "Una tienda de productos lúdicos y educativos con un diseño limpio que convierte sin distracciones."
-    },
-    "photoscape": {
-      "description": "Portfolio de paisajismo donde las imágenes hablan primero — minimal, espacioso y completamente inmersivo."
-    },
-    "m4life": {
-      "description": "Sitio web para una startup que lleva soluciones microbiológicas innovadoras al mercado."
+    "Grid": {
+      "viewStudy": "Ver caso de estudio",
+      "guia": {
+        "title": "Guía Gastronómica",
+        "category": "Gastronomía / Web",
+        "description": "Una guía gastronómica que celebra la cocina dominicana — restaurantes, recetas y las historias detrás de cada plato."
+      },
+      "learn": {
+        "title": "LearnHub",
+        "category": "E-learning / Web",
+        "description": "Sitio web informativo para una plataforma de e-learning — clara, accesible y diseñada para comunicar valor desde el primer scroll."
+      },
+      "neuro": {
+        "title": "NeuroPlay",
+        "category": "E-commerce / Diseño",
+        "description": "Una tienda de productos lúdicos y educativos con un diseño limpio que convierte sin distracciones."
+      },
+      "photoscape": {
+        "title": "Photoscape",
+        "category": "Fotografía / Diseño",
+        "description": "Portfolio de paisajismo donde las imágenes hablan primero — minimal, espacioso y completamente inmersivo."
+      },
+      "m4life": {
+        "title": "M4Life",
+        "category": "Biotech / Web",
+        "description": "Sitio web para una startup que lleva soluciones microbiológicas innovadoras al mercado."
+      },
+      "ctaHeadline": "¿Listo para construir algo grande?",
+      "ctaBody": "Transformamos tu visión en una realidad digital tangible. Hablemos sobre tu próximo desafío.",
+      "ctaBtn": "Escribinos ahora"
     }
   },
-  "about": {
-    "label": "Nosotros",
-    "headline": "Quiénes somos.",
-    "paragraph1": "ATBA Studio es un estudio digital especializado en desarrollo web, diseño de producto y soluciones de software a medida. Colaboramos con fundadores, startups y empresas en crecimiento para dar vida a sus ideas con precisión y propósito.",
-    "paragraph2": "Somos un equipo pequeño, lo que significa que cada proyecto recibe nuestra atención completa. Sin intermediarios, sin traspasos. Solo colaboración directa de principio a fin.",
-    "pillar1Title": "Enfocados",
-    "pillar1Description": "Trabajamos en un número limitado de proyectos a la vez para dedicarle a cada uno la atención que merece.",
-    "pillar2Title": "De principio a fin",
-    "pillar2Description": "Desde el diseño hasta el despliegue, gestionamos el ciclo de vida completo de tu producto.",
-    "pillar3Title": "Construido para durar",
-    "pillar3Description": "Desarrollamos con código limpio y arquitectura escalable para que tu producto crezca contigo."
+  "Contacto": {
+    "Header": {
+      "title1": "¿Hablamos? Contanos tu próximo",
+      "titleHighlight": "gran proyecto.",
+      "subtitle": "Estamos listos para transformar tus ideas en experiencias digitales excepcionales. Unite a la lista de empresas que confían en ATBA Studio."
+    },
+    "Form": {
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Tu nombre completo",
+      "emailLabel": "Email",
+      "emailPlaceholder": "hola@tuempresa.com",
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Contanos sobre tus objetivos y plazos...",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "sent": "¡Mensaje enviado!",
+      "error": "Algo salió mal. Por favor intenta de nuevo.",
+      "infoTitle": "Info de Contacto",
+      "email": "atbastudio@gmail.com",
+      "locationTitle": "Ubicación",
+      "location": "Buenos Aires, Argentina",
+      "budgetCta": "Pide tu presupuesto",
+      "budgetNote": "Respuesta garantizada en menos de 24 horas."
+    }
   },
-  "process": {
-    "label": "Cómo trabajamos",
-    "headline1": "Un proceso claro desde",
-    "headline2": "la idea hasta el lanzamiento.",
-    "step1Title": "Descubrimiento",
-    "step1Description": "Comenzamos por entender tus objetivos, audiencia y contexto. A través de conversaciones y análisis, trazamos cómo es el éxito para tu proyecto.",
-    "step2Title": "Estrategia y Diseño",
-    "step2Description": "Definimos el alcance, la arquitectura y la dirección de diseño. Los wireframes y sistemas de diseño toman forma antes de escribir una sola línea de código.",
-    "step3Title": "Construcción e Iteración",
-    "step3Description": "Desarrollamos con precisión y velocidad. Estás involucrado en todo momento: revisiones regulares, vistas previas en vivo y comunicación clara.",
-    "step4Title": "Lanzamiento y Soporte",
-    "step4Description": "Gestionamos el despliegue, la optimización de rendimiento y la puesta en marcha. Tras el lanzamiento, seguimos cerca para ayudarte a iterar y crecer."
+  "SobreNosotros": {
+
+    "Body": {
+      "heroHeadline": "Transformamos ideas en",
+      "heroHighlight": "productos digitales.",
+      "heroBody": "Somos un estudio que combina diseño y desarrollo para crear soluciones rápidas, claras y efectivas.",
+      "col1Label": "Quiénes Somos",
+      "whoText": "Somos un equipo de diseño y desarrollo apasionados por convertir ideas en productos reales, funcionales y con un diseño excepcional. Trabajamos con fundadores, startups y empresas en crecimiento para dar vida a sus ideas con precisión y propósito.",
+      "col2Label": "Misión",
+      "missionBody": "Ayudamos a nuestros clientes a alcanzar sus objetivos estratégicos mediante tecnología de vanguardia y diseño centrado en el usuario. Cada proyecto es una oportunidad de crear algo que realmente importe.",
+      "col3Label": "Visión",
+      "col3Text": "Ser el referente global de la estética funcional, fusionando el arte con la ingeniería para definir el estándar digital del mañana.",
+      "differentiatorLabel": "Por qué elegirnos",
+      "differentiatorHeadline": "Diseño, creatividad y resolución de problemas — en un solo equipo.",
+      "differentiatorBody": "No solo construimos cosas que se ven bien. Combinamos instinto de diseño, pensamiento creativo y resolución estructurada de problemas para crear productos digitales que rinden tanto como se ven.",
+      "diff1Title": "Diseño",
+      "diff1Desc": "Cada pixel es intencional. Creamos interfaces que no solo son visualmente atractivas, sino profundamente intuitivas para quienes las usan.",
+      "diff2Title": "Creatividad",
+      "diff2Desc": "Abordamos cada proyecto con ojos frescos — sin plantillas, sin atajos. Cada solución está pensada específicamente para tu producto y tus usuarios.",
+      "diff3Title": "Resolución de Problemas",
+      "diff3Desc": "Nos metemos en el desafío real detrás de cada pedido. Desde la arquitectura hasta las decisiones de UX, pensamos con claridad para que el producto final realmente funcione.",
+      "teamHeadline": "Nuestro Equipo",
+      "teamSubheadline": "Las mentes creativas detrás de cada línea de código.",
+      "member1Role": "Fundador & Diseño",
+      "member1Name": "Nombre Placeholder",
+      "member1Bio": "Visionario del diseño que cree que la simplicidad es la máxima sofisticación.",
+      "member2Role": "CTO & Desarrollo",
+      "member2Name": "Nombre Placeholder",
+      "member2Bio": "Arquitecto de sistemas que convierte ideas complejas en realidades escalables y elegantes.",
+      "missionHeadline": "Nos encanta escuchar nuevas ideas.",
+      "ctaHeadline1": "¿Listo para ver lo que",
+      "ctaHeadline2": "hemos construido?",
+      "ctaBtn": "Ver nuestros proyectos"
+    }
   },
-  "contact": {
-    "label": "Contáctanos",
-    "headline1": "Construyamos algo",
-    "headline2": "grande juntos.",
-    "description": "¿Tienes un proyecto en mente? Nos encantaría conocerlo. Envíanos un mensaje y te responderemos en menos de 24 horas.",
-    "email": "atbastudio@gmail.com",
-    "nameLabel": "Nombre",
-    "namePlaceholder": "Tu nombre",
-    "emailLabel": "Email",
-    "emailPlaceholder": "tu@email.com",
-    "subjectLabel": "Asunto",
-    "subjectPlaceholder": "¿De qué se trata?",
-    "messageLabel": "Mensaje",
-    "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
-    "emailError": "Por favor ingresa un correo válido.",
-    "submit": "Enviar mensaje",
-    "sending": "Enviando...",
-    "sent": "¡Mensaje enviado!",
-    "error": "Algo salió mal. Por favor intenta de nuevo."
-  },
-  "footer": {
+  "Footer": {
     "tagline": "Un estudio digital moderno que construye experiencias web de alta calidad y productos digitales.",
     "navigation": "Navegación",
-    "contact": "Contacto",
-    "copyright": "Todos los derechos reservados.",
-    "crafted": "Creado con cariño.",
     "services": "Servicios",
-    "work": "Trabajo",
-    "process": "Proceso",
-    "about": "Nosotros"
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "about": "Nosotros",
+    "social": "Redes",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "Todos los derechos reservados."
   }
 }
