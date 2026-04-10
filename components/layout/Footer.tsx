@@ -30,7 +30,7 @@ export function Footer() {
                 href="/"
                 className="text-sm text-gray-600 hover:text-primary transition-colors duration-200"
               >
-                {navT('services')}
+                {navT('inicio')}
               </Link>
               <Link
                 href="/proyectos"

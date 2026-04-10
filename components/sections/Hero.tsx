@@ -2,28 +2,20 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/Button";
 import { fadeUp, staggerContainer } from "@/lib/animations";
+import VideoLoop from "@/components/ui/VideoLoop";
 
 export function Hero() {
   const t = useTranslations("Home.Hero");
 
   return (
     <section className="relative overflow-hidden ">
-      {/* Background image */}
-      <Image
-        src="/home/home3.png"
-        alt=""
-        fill
-        className="object-cover"
-        priority
-        sizes="100vw"
-      />
-
+      {/* Background video */}
+      <VideoLoop />
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* <div className="absolute inset-0 bg-black/50" /> */}
 
       {/* Content */}
       <motion.div
@@ -33,22 +25,22 @@ export function Hero() {
         className="relative z-10 text-center max-w-5xl mx-auto px-6 py-32 md:py-44"
       >
         {/* Badge label */}
-        <motion.span
+        {/* <motion.span
           variants={fadeUp}
-          className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold tracking-widest uppercase text-white mb-8"
+          className="inline-block px-4 py-1.5 rounded-full bg-black/10 border border-black/20 text-xs font-bold tracking-widest uppercase text-black mb-8"
         >
           {t("label")}
-        </motion.span>
+        </motion.span> */}
 
         {/* H1 */}
-        <motion.h1 variants={fadeUp} className="mb-8 text-white">
+        <motion.h1 variants={fadeUp} className="mb-8 text-black">
           {t("title1")} {t("titleHighlight")} {t("title2")}
         </motion.h1>
 
         {/* Subtitle */}
         <motion.p
           variants={fadeUp}
-          className="max-w-2xl mx-auto text-white/80 mb-12 text-lg"
+          className="max-w-2xl mx-auto text-black/80 mb-12 text-lg"
         >
           {t("subtitle")}
         </motion.p>

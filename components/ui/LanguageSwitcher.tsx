@@ -21,7 +21,7 @@ export function LanguageSwitcher() {
     <button
       onClick={handleSwitch}
       disabled={isPending}
-      className="text-sm font-semibold tracking-widest text-gray-500 hover:text-primary transition-colors duration-200 disabled:opacity-50"
+      className="text-sm font-semibold tracking-widest text-black hover:text-primary transition-colors cursor-pointer duration-200 disabled:opacity-50"
       aria-label="Switch language"
     >
       {locale === 'es' ? 'EN' : 'ES'}

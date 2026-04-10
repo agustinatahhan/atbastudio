@@ -9,6 +9,7 @@ export function ProyectosHeader() {
 
   return (
     <section className="py-24 md:py-32">
+      
       <div className="container-site">
         <motion.div
           variants={staggerContainer}

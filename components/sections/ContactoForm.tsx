@@ -133,7 +133,7 @@ export function ContactoForm() {
                   {t("infoTitle")}
                 </p>
                 <div className="space-y-3">
-                  <p className="flex items-center gap-3 text-2xl font-bold text-black">
+                <p className="flex items-center gap-3 text-xl text-black/90">
                     <RiMailLine className="text-black/70" />
                     {t("email")}
                   </p>

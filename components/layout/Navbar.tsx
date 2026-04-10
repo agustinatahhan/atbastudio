@@ -19,7 +19,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const links: NavLink[] = [
-    { href: '/', label: t('services') },
+    { href: '/', label: t('inicio') },
     { href: '/proyectos', label: t('projects') },
     { href: '/contacto', label: t('contact') },
     { href: '/sobre-nosotros', label: t('about') },
@@ -47,10 +47,10 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-semibold tracking-tight transition-colors duration-200 ${
+              className={`text-sm font-normal tracking-tight transition-colors duration-200 ${
                 isActive(link.href)
-                  ? 'text-primary'
-                  : 'text-gray-500 hover:text-gray-900'
+                  ? 'text-primary font-semibold'
+                  : 'text-black hover:text-gray-900'
               }`}
             >
               {link.label}
@@ -61,11 +61,11 @@ export function Navbar() {
         {/* Right: lang switcher + CTA */}
         <div className="hidden md:flex items-center gap-4">
           <LanguageSwitcher />
-          <Link href="/contacto">
+          {/* <Link href="/contacto">
             <Button variant="primary" size="sm">
               {t('cta')} →
             </Button>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile: lang switcher + hamburger */}
@@ -73,7 +73,7 @@ export function Navbar() {
           <LanguageSwitcher />
           <button
             onClick={() => setIsOpen((prev) => !prev)}
-            className="text-gray-700 hover:text-primary transition-colors p-1"
+            className="text-black hover:text-primary transition-colors p-1"
             aria-label="Toggle menu"
           >
             {isOpen ? <RiCloseLine size={22} /> : <RiMenuLine size={22} />}
@@ -93,20 +93,20 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className={`text-sm font-semibold py-2 transition-colors duration-200 ${
+              className={`text-sm font-normal py-2 transition-colors duration-200 ${
                 isActive(link.href)
-                  ? 'text-primary'
-                  : 'text-gray-600 hover:text-gray-900'
+                  ? 'text-primary font-semibold'
+                  : 'text-black hover:text-gray-900'
               }`}
             >
               {link.label}
             </Link>
           ))}
-          <Link href="/contacto" onClick={() => setIsOpen(false)}>
+          {/* <Link href="/contacto" onClick={() => setIsOpen(false)}>
             <Button variant="primary" size="sm" className="w-full">
               {t('cta')} →
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </header>

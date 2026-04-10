@@ -6,77 +6,60 @@ import Image from 'next/image'
 import { Link } from '@/i18n/routing'
 import { Button } from '@/components/ui/Button'
 import {
-  RiGroupLine,
   RiRocketLine,
   RiEyeLine,
-  RiPaletteLine,
-  RiLightbulbLine,
-  RiToolsLine,
+  RiCheckLine,
+  RiLinkedinBoxFill,
 } from 'react-icons/ri'
 import { fadeUp, staggerContainer } from '@/lib/animations'
 
 const columns = [
-  { icon: RiGroupLine, labelKey: 'col1Label' as const, textKey: 'whoText' as const },
   { icon: RiRocketLine, labelKey: 'col2Label' as const, textKey: 'missionBody' as const },
   { icon: RiEyeLine, labelKey: 'col3Label' as const, textKey: 'col3Text' as const },
 ]
 
-const pillars = [
-  { icon: RiPaletteLine, titleKey: 'diff1Title' as const, descKey: 'diff1Desc' as const },
-  { icon: RiLightbulbLine, titleKey: 'diff2Title' as const, descKey: 'diff2Desc' as const },
-  { icon: RiToolsLine, titleKey: 'diff3Title' as const, descKey: 'diff3Desc' as const },
+const steps = [
+  { num: '01', titleKey: 'step1Title' as const, descKey: 'step1Desc' as const },
+  { num: '02', titleKey: 'step2Title' as const, descKey: 'step2Desc' as const },
+  { num: '03', titleKey: 'step3Title' as const, descKey: 'step3Desc' as const },
+  { num: '04', titleKey: 'step4Title' as const, descKey: 'step4Desc' as const },
 ]
+
+const checkKeys = ['check1', 'check2', 'check3', 'check4', 'check5'] as const
+
 
 export function SobreNosotrosBody() {
   const t = useTranslations('SobreNosotros.Body')
 
   return (
     <>
-      {/* Hero — 2-col: text left, image right */}
-      <section className="pt-12 pb-24 md:pb-32">
+      {/* Hero — solo texto, centrado */}
+      <section className="pt-28 md:pt-36 pb-24 md:pb-32">
         <div className="container-site">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Text */}
-            <motion.div
-              variants={staggerContainer}
-              initial="hidden"
-              animate="visible"
-              className="space-y-8"
-            >
-              <motion.h1 variants={fadeUp} className="leading-none">
-                {t('heroHeadline')}{' '}
-                <span className="text-gradient-primary">{t('heroHighlight')}</span>
-              </motion.h1>
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+            className="max-w-3xl space-y-6"
+          >
+            <motion.h1 variants={fadeUp} className="leading-tight">
+              {t('heroHeadline')}{' '}
+              <span className="text-gradient-primary">{t('heroHighlight')}</span>
+            </motion.h1>
 
-              <motion.p variants={fadeUp} className="max-w-lg text-secondary">
-                {t('heroBody')}
-              </motion.p>
+            <motion.p variants={fadeUp} className="text-xl text-secondary leading-relaxed">
+              {t('heroBody')}
+            </motion.p>
 
-              <motion.span
-                variants={fadeUp}
-                className="block w-12 h-1 bg-primary rounded-full"
-              />
-            </motion.div>
-
-            {/* Image */}
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700 aspect-3/4 lg:aspect-auto lg:h-125">
-                <Image
-                  src="/about/couple.jpeg"
-                  alt=""
-                  fill
-                  className="object-cover"
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
-              <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-accent rounded-full opacity-30 blur-3xl pointer-events-none" />
-            </div>
-          </div>
+            <motion.span
+              variants={fadeUp}
+              className="block w-12 h-1 bg-primary rounded-full"
+            />
+          </motion.div>
         </div>
       </section>
 
-      {/* Quiénes Somos / Misión / Visión — 3-col cards */}
+      {/* Misión / Visión — 2 cards ancho completo */}
       <section className="py-24 md:py-32 bg-surface">
         <div className="container-site">
           <motion.div
@@ -84,7 +67,7 @@ export function SobreNosotrosBody() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
           >
             {columns.map(({ icon: Icon, labelKey, textKey }) => (
               <div
@@ -106,11 +89,70 @@ export function SobreNosotrosBody() {
         </div>
       </section>
 
-      {/* What sets us apart */}
+      {/* Cómo trabajamos — 4 pasos numerados */}
       <section className="py-24 md:py-32">
         <div className="container-site">
-          {/* Top: text + image */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+          <div className="mb-14">
+            <motion.span
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-xs font-bold tracking-widest uppercase text-primary mb-6"
+            >
+              {t('howLabel')}
+            </motion.span>
+
+            <motion.h2
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="mb-4"
+            >
+              {t('howHeadline')}
+            </motion.h2>
+
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="text-secondary max-w-xl"
+            >
+              {t('howBody')}
+            </motion.p>
+          </div>
+
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+          >
+            {steps.map(({ num, titleKey, descKey }) => (
+              <motion.div
+                key={num}
+                variants={fadeUp}
+                className="bg-surface p-8 rounded-2xl border border-gray-100 shadow-sm hover:-translate-y-1 transition-transform duration-300"
+              >
+                <span className="block text-5xl font-bold text-primary/15 leading-none mb-5">
+                  {num}
+                </span>
+                <h3 className="mb-2">{t(titleKey)}</h3>
+                <p className="text-base text-secondary leading-relaxed">{t(descKey)}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Por qué elegirnos — checklist + image */}
+      <section className="py-24 md:py-32 bg-surface">
+        <div className="container-site">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left: text + checklist */}
             <div>
               <motion.span
                 variants={fadeUp}
@@ -127,7 +169,7 @@ export function SobreNosotrosBody() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="mb-6"
+                className="mb-4"
               >
                 {t('differentiatorHeadline')}
               </motion.h2>
@@ -137,14 +179,33 @@ export function SobreNosotrosBody() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
+                className="text-secondary mb-8"
               >
                 {t('differentiatorBody')}
               </motion.p>
+
+              <motion.ul
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="space-y-4"
+              >
+                {checkKeys.map((key) => (
+                  <motion.li key={key} variants={fadeUp} className="flex items-start gap-3">
+                    <span className="mt-0.5 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                      <RiCheckLine className="text-sm text-primary" />
+                    </span>
+                    <span className="text-base text-on-surface leading-snug">{t(key)}</span>
+                  </motion.li>
+                ))}
+              </motion.ul>
             </div>
 
+            {/* Right: image */}
             <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/home/home4.png"
+                src="/about/coup.jpeg"
                 alt=""
                 fill
                 className="object-cover"
@@ -152,37 +213,11 @@ export function SobreNosotrosBody() {
               />
             </div>
           </div>
-
-          {/* Pillar cards */}
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          >
-            {pillars.map(({ icon: Icon, titleKey, descKey }) => (
-              <div
-                key={titleKey}
-                className="bg-surface p-8 rounded-2xl border border-gray-100 shadow-sm hover:-translate-y-1 transition-transform duration-300"
-              >
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Icon className="text-xl text-primary" />
-                </div>
-                <motion.h3 variants={fadeUp} className="mb-3">
-                  {t(titleKey)}
-                </motion.h3>
-                <motion.p variants={fadeUp} className="text-base">
-                  {t(descKey)}
-                </motion.p>
-              </div>
-            ))}
-          </motion.div>
         </div>
       </section>
 
       {/* Team */}
-      <section className="py-24 md:py-32 bg-surface">
+      <section className="py-24 md:py-32">
         <div className="container-site">
           <div className="mb-16">
             <motion.h2
@@ -212,13 +247,13 @@ export function SobreNosotrosBody() {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-2 gap-8"
           >
-            {/* Member 1 */}
-            <div className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+            {/* Member 1 — Agustina */}
+            <div className="group bg-surface rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="flex flex-col sm:flex-row gap-8 items-center">
-                <div className="w-36 h-36 rounded-full overflow-hidden shrink-0 border-4 border-surface">
+                <div className="w-36 h-36 rounded-full overflow-hidden shrink-0 border-4 border-white">
                   <Image
-                    src="/about/couple.jpeg"
-                    alt=""
+                    src="/about/agus.jpg"
+                    alt="Agustina"
                     width={144}
                     height={144}
                     className="w-full h-full object-cover object-left group-hover:scale-105 transition-transform duration-500"
@@ -235,17 +270,28 @@ export function SobreNosotrosBody() {
                   <motion.p variants={fadeUp} className="text-secondary text-base">
                     {t('member1Bio')}
                   </motion.p>
+                  <motion.div variants={fadeUp} className="pt-1 flex justify-center sm:justify-start">
+                    <a
+                      href="https://www.linkedin.com/in/agustinatahhan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/40 transition-colors duration-200"
+                      aria-label="LinkedIn de Agustina"
+                    >
+                      <RiLinkedinBoxFill className="text-2xl" />
+                    </a>
+                  </motion.div>
                 </div>
               </div>
             </div>
 
-            {/* Member 2 */}
-            <div className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+            {/* Member 2 — Nicolás */}
+            <div className="group bg-surface rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="flex flex-col sm:flex-row gap-8 items-center">
-                <div className="w-36 h-36 rounded-full overflow-hidden shrink-0 border-4 border-surface">
+                <div className="w-36 h-36 rounded-full overflow-hidden shrink-0 border-4 border-white">
                   <Image
-                    src="/about/couple.jpeg"
-                    alt=""
+                    src="/about/nico.jpg"
+                    alt="Nicolás"
                     width={144}
                     height={144}
                     className="w-full h-full object-cover object-right group-hover:scale-105 transition-transform duration-500"
@@ -262,6 +308,17 @@ export function SobreNosotrosBody() {
                   <motion.p variants={fadeUp} className="text-secondary text-base">
                     {t('member2Bio')}
                   </motion.p>
+                  <motion.div variants={fadeUp} className="pt-1 flex justify-center sm:justify-start">
+                    <a
+                      href="https://www.linkedin.com/in/nicolasbarquin"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/40 transition-colors duration-200"
+                      aria-label="LinkedIn de Nicolás"
+                    >
+                      <RiLinkedinBoxFill className="text-2xl" />
+                    </a>
+                  </motion.div>
                 </div>
               </div>
             </div>
