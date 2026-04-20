@@ -1,30 +1,43 @@
-'use client'
+"use client";
 
-import { useLocale } from 'next-intl'
-import { useRouter, usePathname } from '@/i18n/routing'
-import { useTransition } from 'react'
+import { useLocale } from "next-intl";
+import { useRouter, usePathname } from "@/i18n/routing";
+import { useTransition } from "react";
 
 export function LanguageSwitcher() {
-  const locale = useLocale()
-  const router = useRouter()
-  const pathname = usePathname()
-  const [isPending, startTransition] = useTransition()
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const [isPending, startTransition] = useTransition();
 
-  const handleSwitch = () => {
-    const nextLocale = locale === 'es' ? 'en' : 'es'
+  const handleSwitch = (lang: "es" | "en") => {
+    if (lang === locale) return;
     startTransition(() => {
-      router.replace(pathname, { locale: nextLocale })
-    })
-  }
+      router.replace(pathname, { locale: lang });
+    });
+  };
 
   return (
-    <button
-      onClick={handleSwitch}
-      disabled={isPending}
-      className="text-sm font-semibold tracking-widest text-black hover:text-primary transition-colors cursor-pointer duration-200 disabled:opacity-50"
-      aria-label="Switch language"
+    <div
+      className="flex items-center bg-muted rounded-[6px] p-0.5 gap-0.5 transition-colors duration-300"
+      role="group"
+      aria-label="Language selector"
     >
-      {locale === 'es' ? 'EN' : 'ES'}
-    </button>
-  )
+      {(["es", "en"] as const).map((lang) => (
+        <button
+          key={lang}
+          onClick={() => handleSwitch(lang)}
+          aria-label={lang === "es" ? "Switch to Spanish" : "Switch to English"}
+          className={`px-3 py-1 text-xs font-medium tracking-widest uppercase rounded-md transition-all duration-200 cursor-pointer font-body
+        ${
+          locale === lang
+            ? "bg-white text-primary shadow-sm"
+            : "text-muted-foreground hover:text-foreground"
+        }`}
+        >
+          {lang.toUpperCase()}
+        </button>
+      ))}
+    </div>
+  );
 }

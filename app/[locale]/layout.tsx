@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
-import '../globals.css'
+import '../globals.css';
 
 const wix = Wix_Madefor_Text({
   subsets: ['latin'],

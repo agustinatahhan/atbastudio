@@ -21,7 +21,7 @@ export function ProjectCard({
   return (
     <article className="group">
       {/* Image */}
-      <div className="relative aspect-16/10 rounded-2xl overflow-hidden bg-gray-100 mb-6">
+      <div className="relative aspect-16/10 rounded-md overflow-hidden bg-gray-100 mb-6">
         <Image
           src={image}
           alt={title}

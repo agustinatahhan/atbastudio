@@ -53,10 +53,11 @@ export function Projects() {
           </div>
 
           <motion.div variants={fadeUp}>
-            <Link href="/proyectos">
-              <Button  size="md">
+            <Link href="/proyectos" className='btn-primary'>
+              {/* <Button  size="md">
                 {t('viewAll')}
-              </Button>
+              </Button> */}
+              {t("viewAll")}
             </Link>
           </motion.div>
         </motion.div>

@@ -52,22 +52,23 @@
       },
       "photoscape": {
         "title": "Photoscape",
-        "category": "Photography / Portfolio",
-        "description": "A landscaping portfolio where the images do the talking — minimal, spacious, and fully immersive."
+        "category": "Landscaping / Web",
+        "description": "A landscaping company in Florida. We redesigned their site to position them in the market and generate new client conversions."
       }
     },
     "CTA": {
       "headline1": "Ready to build the",
       "headline2": "next level?",
-      "body": "We are scheduling projects for 2025. Let's talk about your vision.",
+      "body": "We are scheduling projects for 2026. Let's talk about your vision.",
       "cta": "Start a project"
     }
   },
   "Proyectos": {
     "Header": {
       "badge": "Portfolio",
-      "title": "Our Projects",
-      "subtitle": "We build high-impact digital solutions that blend flawless aesthetics with cutting-edge technology.",
+      "title1": "Every project,",
+      "titleHighlight": "a tailored solution.",
+      "subtitle": "From websites to complex platforms — every project is the result of understanding the business, designing with intention, and building with technical precision.",
       "filterAll": "All",
       "filterWeb": "Web",
       "filterDesign": "Design",
@@ -92,13 +93,13 @@
       },
       "photoscape": {
         "title": "Photoscape",
-        "category": "Photography / Design",
-        "description": "A landscaping portfolio where the images do the talking — minimal, spacious, and fully immersive."
+        "category": "Landscaping / Web",
+        "description": "Landscaping company based in Florida. We redesigned their website to position them in the local market and drive new client conversions."
       },
       "m4life": {
         "title": "M4Life",
         "category": "Biotech / Web",
-        "description": "Website for a startup bringing innovative microbiological solutions to market."
+        "description": "Startup offering microbiological solutions for agriculture and environmental care. We built their digital presence to convey professionalism and support their international growth."
       },
       "ctaHeadline": "Ready to build something great?",
       "ctaBody": "We transform your vision into a tangible digital reality. Let's talk about your next challenge.",
@@ -117,21 +118,26 @@
       "emailLabel": "Email",
       "emailPlaceholder": "hello@yourcompany.com",
       "messageLabel": "Message",
-      "messagePlaceholder": "Tell us about your goals and timelines...",
+      "messagePlaceholder": "Tell us about your project...",
       "submit": "Send message",
-      "sending": "Sending...",
-      "sent": "Message sent!",
-      "error": "Something went wrong. Please try again.",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "errors": {
+        "nameRequired": "Please enter your name",
+        "emailRequired": "Please enter your email address",
+        "emailInvalid": "Please enter a valid email address",
+        "messageRequired": "Please enter your message",
+        "sendFailed": "There was an error sending your message. Please try again."
+      },
       "infoTitle": "Contact Info",
       "email": "atbastudio@gmail.com",
       "locationTitle": "Location",
       "location": "Argentina",
       "budgetCta": "Request a quote",
-      "budgetNote": "Guaranteed response within 24 hours."
+      "budgetNote": "Guaranteed response within 24 hours.",
+      "follow": "Follow us on social media"
     }
   },
   "SobreNosotros": {
-
     "Body": {
       "heroHeadline": "We turn ideas into",
       "heroHighlight": "digital products.",
@@ -146,16 +152,16 @@
       "howHeadline": "How we work",
       "howBody": "We believe in a clear, collaborative process focused on results.",
       "step1Title": "We understand your idea",
-      "step1Desc": "We listen to your needs and goals to define the right solution.",
-      "step2Title": "We design the experience",
-      "step2Desc": "We create intuitive and attractive interfaces, putting the user at the center.",
+      "step1Desc": "Before designing anything, we understand your business, your audience, and your goals. This stage defines everything that follows.",
+      "step2Title": "We research and design",
+      "step2Desc": "We gather references, analyze your competition, and define a visual direction that is true to your brand. Nothing comes from a template.",
       "step3Title": "We develop the product",
       "step3Desc": "We turn the design into a functional, scalable, and optimized application.",
-      "step4Title": "We iterate and improve",
-      "step4Desc": "We test, adjust, and support the growth of the product.",
+      "step4Title": "We launch and support",
+      "step4Desc": "When the site is finished, we onboard you, answer your questions, and stay available for whatever you need.",
       "differentiatorLabel": "Why choose us",
-      "differentiatorHeadline": "Design and development, the way it should be.",
-      "differentiatorBody": "We work as a team from day one, with clear communication and a real focus on what matters: your product and your users.",
+      "differentiatorHeadline": "Creativity and logic, in one team.",
+      "differentiatorBody": "We are a designer with creative vision and a developer with problem-solving ability. That combination means every project not only looks great — it works great. No templates. No generic solutions. We understand your problem and build from scratch, because every business is unique and its website should be too.",
       "check1": "Teamwork between development and design from the start",
       "check2": "User-centered approach",
       "check3": "Clear communication and support throughout the process",

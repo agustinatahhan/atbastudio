@@ -9,12 +9,12 @@
   "Home": {
     "Hero": {
       "label": "Estudio Digital",
-      "title1": "Diseño y",
-      "titleHighlight": "desarrollo de",
-      "title2": "experiencias digitales",
-      "subtitle": "Transformamos ideas complejas en productos simples, rápidos y fáciles de usar.",
-      "ctaPrimary": "Ver nuestro trabajo",
-      "ctaSecondary": "Iniciar un proyecto"
+      "title1": "Tu negocio merece ",
+      "titleHighlight": "un sitio web",
+      "title2": "que te represente",
+      "subtitle": "Diseñamos y desarrollamos sitios a medida, sin plantillas. Solo código propio, buen diseño y resultados reales",
+      "ctaPrimary": "Nuestros trabajos",
+      "ctaSecondary": "Inicia tu proyecto"
     },
     "About": {
       "label": "Nuestra visión",
@@ -59,15 +59,16 @@
     "CTA": {
       "headline1": "¿Listo para construir el",
       "headline2": "siguiente nivel?",
-      "body": "Estamos agendando proyectos para 2025. Hablemos sobre tu visión.",
-      "cta": "Iniciar proyecto"
+      "body": "Estamos agendando proyectos para 2026. Hablemos sobre tu visión.",
+      "cta": "Inicia tu sitio web"
     }
   },
   "Proyectos": {
     "Header": {
       "badge": "Portafolio",
-      "title": "Nuestros Proyectos",
-      "subtitle": "Construimos soluciones digitales de alto impacto que fusionan estética impecable con rendimiento tecnológico de vanguardia.",
+      "title1": "Cada proyecto,",
+      "titleHighlight": "una solución a medida.",
+      "subtitle": "Desde sitios web hasta plataformas complejas — cada proyecto es el resultado de entender el negocio, diseñar con intención y construir con precisión técnica.",
       "filterAll": "Todos",
       "filterWeb": "Web",
       "filterDesign": "Diseño",
@@ -117,21 +118,26 @@
       "emailLabel": "Email",
       "emailPlaceholder": "hola@tuempresa.com",
       "messageLabel": "Mensaje",
-      "messagePlaceholder": "Contanos sobre tus objetivos y plazos...",
+      "messagePlaceholder": "Contanos sobre tu proyecto...",
       "submit": "Enviar mensaje",
-      "sending": "Enviando...",
-      "sent": "¡Mensaje enviado!",
-      "error": "Algo salió mal. Por favor intenta de nuevo.",
+      "success": "¡Mensaje enviado con éxito! Te contactaremos pronto.",
+      "errors": {
+        "nameRequired": "Por favor ingresá tu nombre",
+        "emailRequired": "Por favor ingresá tu correo electrónico",
+        "emailInvalid": "Por favor ingresá un correo válido",
+        "messageRequired": "Por favor ingresá tu mensaje",
+        "sendFailed": "Hubo un error al enviar el mensaje. Por favor intentá de nuevo."
+      },
       "infoTitle": "Info de Contacto",
       "email": "atbastudio@gmail.com",
       "locationTitle": "Ubicación",
       "location": "Argentina",
       "budgetCta": "Pide tu presupuesto",
-      "budgetNote": "Respuesta garantizada en menos de 24 horas."
+      "budgetNote": "Respuesta garantizada en menos de 24 horas.",
+      "follow": "Seguinos en nuestras redes"
     }
   },
   "SobreNosotros": {
-
     "Body": {
       "heroHeadline": "Transformamos ideas en",
       "heroHighlight": "productos digitales.",
@@ -146,16 +152,16 @@
       "howHeadline": "Cómo trabajamos",
       "howBody": "Creemos en un proceso claro, colaborativo y enfocado en resultados.",
       "step1Title": "Entendemos tu idea",
-      "step1Desc": "Escuchamos tus necesidades y objetivos para definir una solución adecuada.",
-      "step2Title": "Diseñamos la experiencia",
-      "step2Desc": "Creamos interfaces intuitivas y atractivas, poniendo al usuario en el centro.",
+      "step1Desc": "Antes de diseñar cualquier cosa, entendemos tu negocio, tu público y tus objetivos. Esta etapa define todo lo que viene.",
+      "step2Title": "Investigamos y diseñamos",
+      "step2Desc": "Buscamos referencias, analizamos tu competencia y definimos una dirección visual que sea fiel a tu marca. Nada sale de una plantilla.",
       "step3Title": "Desarrollamos el producto",
       "step3Desc": "Convertimos el diseño en una aplicación funcional, escalable y optimizada.",
-      "step4Title": "Iteramos y mejoramos",
-      "step4Desc": "Probamos, ajustamos y acompañamos el crecimiento del producto.",
+      "step4Title": "Lanzamos y acompañamos",
+      "step4Desc": "Cuando el sitio está terminado, te capacitamos, resolvemos dudas y seguimos disponibles para lo que necesites.",
       "differentiatorLabel": "Por qué elegirnos",
-      "differentiatorHeadline": "Diseño y desarrollo, como debe ser.",
-      "differentiatorBody": "Trabajamos en equipo desde el primer día, con comunicación clara y enfoque real en lo que importa: tu producto y tus usuarios.",
+      "differentiatorHeadline": "Creatividad y lógica, en un solo equipo.",
+      "differentiatorBody": "Somos un diseñador con visión creativa y una desarrolladora con capacidad de resolución de problemas. Esa combinación hace que cada proyecto no sólo se vea bien, sino que funciona bien. Nada de plantillas. Nada de soluciones genéricas. Entendemos tu problema y construimos desde cero, porque cada negocio es único y su sitio web debería serlo también.",
       "check1": "Trabajo en equipo entre desarrollo y diseño desde el inicio",
       "check2": "Enfoque centrado en el usuario",
       "check3": "Comunicación clara y acompañamiento en todo el proceso",

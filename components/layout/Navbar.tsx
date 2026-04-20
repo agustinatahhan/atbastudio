@@ -7,7 +7,7 @@ import { Link } from '@/i18n/routing'
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher'
 import { Button } from '@/components/ui/Button'
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri'
-
+import Image from 'next/image'
 type NavLink = {
   href: string
   label: string
@@ -21,8 +21,8 @@ export function Navbar() {
   const links: NavLink[] = [
     { href: '/', label: t('inicio') },
     { href: '/proyectos', label: t('projects') },
-    { href: '/contacto', label: t('contact') },
     { href: '/sobre-nosotros', label: t('about') },
+    { href: '/contacto', label: t('contact') },
   ]
 
   const isActive = (href: string) => {
@@ -32,13 +32,19 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-5 px-4">
-      <nav className="w-full max-w-5xl bg-white/80 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-full px-6 py-3 flex items-center justify-between">
+      <nav className="w-full max-w-5xl bg-white/80 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] rounded-md
+           text-sm font-medium px-6 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
           className="text-xl font-bold tracking-tight text-gray-900 font-display"
         >
-          ATBA Studio
+          <Image
+              src="/logo/logo-dark.png"
+              alt="Logo ATBA"
+              width={50}
+              height={50}
+            />
         </Link>
 
         {/* Desktop nav */}

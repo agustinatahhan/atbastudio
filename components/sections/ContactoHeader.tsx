@@ -8,8 +8,8 @@ export function ContactoHeader() {
   const t = useTranslations('Contacto.Header')
 
   return (
-    <section className="pt-40 pb-16 md:pt-48 md:pb-20">
-      <div className="container-site">
+     <section className="pady-section bg-linear-to-r  from-accent/20 via-white/80 to-primary/30 ">
+        <div className="container-site  ">
         <motion.div
           variants={staggerContainer}
           initial="hidden"

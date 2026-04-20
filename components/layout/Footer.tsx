@@ -1,105 +1,106 @@
-import { useTranslations } from 'next-intl'
-import { Link } from '@/i18n/routing'
-import { RiInstagramLine, RiLinkedinLine, RiGithubLine } from 'react-icons/ri'
-
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
+import { RiInstagramLine, RiLinkedinLine, RiGithubLine } from "react-icons/ri";
+import Image from "next/image";
 export function Footer() {
-  const t = useTranslations('Footer')
-  const navT = useTranslations('Nav')
+  const t = useTranslations("Footer");
+  const navT = useTranslations("Nav");
 
   return (
-    <footer className="bg-white border-t border-gray-100 pt-16 pb-10">
+    <footer className="mesh-gradient-bg  border-secondary/20 pt-16 pb-10">
       <div className="container-site">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+        <div className="flex flex-row justify-between gap-10 mb-12">
           {/* Brand */}
-          <div className="md:col-span-1">
-            <p className="text-xl font-bold tracking-tight text-gray-900 font-display mb-3">
-              ATBA Studio
-            </p>
-            <p className="text-sm text-gray-500 leading-relaxed max-w-xs">
-              {t('tagline')}
+          <div className="">
+            <Image
+              src="/logo/logo-footer.png"
+              alt="Logo ATBA"
+              width={100}
+              height={100}
+            />
+            <p className="text-sm text-secondary leading-relaxed max-w-xs mt-3">
+              {t("tagline")}
             </p>
           </div>
 
           {/* Navigation */}
-          <div>
-            <p className="text-xs font-bold tracking-widest uppercase text-gray-400 mb-5">
-              {t('navigation')}
+          {/* <div>
+            <p className="text-xs font-bold tracking-widest uppercase text-secondary-400 mb-5">
+              {t("navigation")}
             </p>
             <nav className="flex flex-col gap-3">
               <Link
                 href="/"
-                className="text-sm text-gray-600 hover:text-primary transition-colors duration-200"
+                className="text-sm text-secondary-600 hover:text-primary transition-colors duration-200"
               >
-                {navT('inicio')}
+                {navT("inicio")}
               </Link>
               <Link
                 href="/proyectos"
-                className="text-sm text-gray-600 hover:text-primary transition-colors duration-200"
+                className="text-sm text-secondary-600 hover:text-primary transition-colors duration-200"
               >
-                {t('projects')}
+                {t("projects")}
               </Link>
               <Link
                 href="/contacto"
-                className="text-sm text-gray-600 hover:text-primary transition-colors duration-200"
+                className="text-sm text-secondary hover:text-primary transition-colors duration-200"
               >
-                {t('contact')}
+                {t("contact")}
               </Link>
               <Link
                 href="/sobre-nosotros"
-                className="text-sm text-gray-600 hover:text-primary transition-colors duration-200"
+                className="text-sm text-secondary hover:text-primary transition-colors duration-200"
               >
-                {t('about')}
+                {t("about")}
               </Link>
             </nav>
-          </div>
+          </div> */}
 
           {/* Social */}
           <div>
-            <p className="text-xs font-bold tracking-widest uppercase text-gray-400 mb-5">
-              {t('social')}
+            <p className="text-xs font-bold tracking-widest uppercase text-secondary mb-5 mr-62">
+              {t("social")}
             </p>
             <div className="flex flex-col gap-3">
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-gray-600 hover:text-primary transition-colors duration-200"
+                className="flex items-center gap-2 text-sm text-secondary hover:text-primary transition-colors duration-200"
               >
                 <RiInstagramLine size={16} />
-                {t('instagram')}
+                {t("instagram")}
               </a>
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-gray-600 hover:text-primary transition-colors duration-200"
+                className="flex items-center gap-2 text-sm text-secondary hover:text-primary transition-colors duration-200"
               >
                 <RiLinkedinLine size={16} />
-                {t('linkedin')}
+                {t("linkedin")}
               </a>
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-gray-600 hover:text-primary transition-colors duration-200"
+                className="flex items-center gap-2 text-sm text-secondary hover:text-primary transition-colors duration-200"
               >
                 <RiGithubLine size={16} />
-                {t('github')}
+                {t("github")}
               </a>
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} ATBA Studio. {t('copyright')}
+        <div className="border-t border-secondary/20 pt-8 flex flex-col md:flex-row justify-end items-center gap-3">
+          <p className="text-xs text-secondary ">
+            © {new Date().getFullYear()} ATBA Studio. {t("copyright")}
           </p>
-          <p className="text-xs text-gray-400">
-            Buenos Aires, Argentina
-          </p>
+          {/* <p className="text-xs text-secondary">Buenos Aires, Argentina</p> */}
         </div>
       </div>
     </footer>
-  )
+  );
 }

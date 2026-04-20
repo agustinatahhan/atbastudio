@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { useTranslations } from 'next-intl'
-import { Link } from '@/i18n/routing'
-import { Button } from '@/components/ui/Button'
-import { fadeUp, staggerContainer } from '@/lib/animations'
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
+import { fadeUp, staggerContainer } from "@/lib/animations";
 
 export function CTA() {
-  const t = useTranslations('Home.CTA')
+  const t = useTranslations("Home.CTA");
 
   return (
     <section className="py-24 md:py-32">
@@ -21,23 +21,24 @@ export function CTA() {
               viewport={{ once: true }}
             >
               <motion.h2 variants={fadeUp} className="text-gray-900 mb-6">
-                {t('headline1')}
+                {t("headline1")}
                 <br />
-                {t('headline2')}
+                {t("headline2")}
               </motion.h2>
 
               <motion.p
                 variants={fadeUp}
                 className="max-w-xl mx-auto text-secondary mb-10"
               >
-                {t('body')}
+                {t("body")}
               </motion.p>
 
               <motion.div variants={fadeUp}>
-                <Link href="/contacto">
-                  <Button variant="primary" size="lg">
+                <Link href="/contacto" className="btn-primary">
+                  {/* <Button variant="primary" size="lg">
                     {t('cta')} →
-                  </Button>
+                  </Button> */}
+                  {t("cta")} 
                 </Link>
               </motion.div>
             </motion.div>
@@ -45,5 +46,5 @@ export function CTA() {
         </div>
       </div>
     </section>
-  )
+  );
 }
