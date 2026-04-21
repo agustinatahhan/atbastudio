@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
-import { Button } from "@/components/ui/Button";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 
 export function CTA() {
@@ -35,10 +34,7 @@ export function CTA() {
 
               <motion.div variants={fadeUp}>
                 <Link href="/contacto" className="btn-primary">
-                  {/* <Button variant="primary" size="lg">
-                    {t('cta')} →
-                  </Button> */}
-                  {t("cta")} 
+                  {t("cta")}
                 </Link>
               </motion.div>
             </motion.div>

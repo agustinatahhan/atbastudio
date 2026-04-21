@@ -30,37 +30,64 @@
       "pillar3Title": "Problem Solving",
       "pillar3Desc": "We dig into the real challenge behind every brief. From architecture to UX decisions, we think clearly so the final product truly works."
     },
+    "Pillars": {
+      "label": "Why ATBA",
+      "headline": "What sets us apart.",
+      "pillar1Title": "No templates",
+      "pillar1Desc": "Every site we build starts from scratch. Your business isn't generic — your website shouldn't be either.",
+      "pillar2Title": "Design and development from scratch",
+      "pillar2Desc": "We build with Next.js. That means real speed, pixel-perfect design, and code that scales.",
+      "pillar3Title": "Real support",
+      "pillar3Desc": "We onboard you and stay available after your site goes live."
+    },
     "Services": {
       "label": "Services",
       "headline": "What we build",
-      "card1Title": "Web Development",
-      "card1Desc": "We design and build fast, scalable web applications with impeccable user experience.",
-      "card2Title": "UX/UI Design",
-      "card2Desc": "We create intuitive, visually powerful interfaces that connect with users and elevate your digital product.",
-      "card3Title": "Custom Software",
-      "card3Desc": "We build personalized technological solutions tailored exactly to your business processes and goals."
+      "subtitle": "These are the types of sites we develop.",
+      "card1Title": "Landing Pages",
+      "card1Desc": "Conversion pages designed from scratch. Optimized so visitors do what you need: buy, book, contact, or subscribe.",
+      "card2Title": "Custom Websites",
+      "card2Desc": "Informational sites, portfolios, and booking platforms built with Next.js. Fast, scalable, and uniquely designed for your brand.",
+      "card3Title": "E-commerce",
+      "card3Desc": "Online stores built from scratch with a focus on shopping experience, loading speed, and design that converts.",
+      "card4Title": "Website Redesign",
+      "card4Desc": "For businesses that already have an online presence but need a refresh. We audit what exists, redefine the visual direction, and rebuild from scratch.",
+      "ctaText": "Not sure which one you need?",
+      "ctaLink": "Let's talk"
     },
     "Projects": {
-      "label": "Selected Projects",
-      "headline1": "Our latest",
-      "headline2": "work.",
-      "viewAll": "View all projects",
+      "label": "Our Work",
+      "headline1": "Futured Projects",
+      "headline2": "how we think and build.",
+      "viewAll": "View all",
       "guia": {
-        "title": "Gastronomic Guide",
+        "title": "Dominican Gastronomic Guide",
         "category": "Food & Culture / Web",
-        "description": "A food guide celebrating Dominican cuisine — restaurants, recipes, and the stories behind every dish."
+        "description": "A digital food guide celebrating Dominican culinary identity — destinations, traditional dishes, and cultural routes."
       },
-      "photoscape": {
-        "title": "Photoscape",
-        "category": "Landscaping / Web",
-        "description": "A landscaping company in Florida. We redesigned their site to position them in the market and generate new client conversions."
+      "itiba": {
+        "title": "Itibá Gastronomic Agency",
+        "category": "Agency / Web",
+        "description": "A culinary and cultural platform born in the Caribbean to rethink gastronomy with identity, method, and a vision for the future."
       }
     },
+    "MiniNosotros": {
+      "label": "Who we are",
+      "title": "Design and code, one team.",
+      "body": "We work together from the start of every project so what gets designed is exactly what gets built. No middlemen, no lost in translation.",
+      "cta": "Get to know us",
+      "card1Role": "Web Development",
+      "card1Name": "Agustina",
+      "card1Desc": "I build efficient, scalable, and well-structured solutions.",
+      "card2Role": "UX/UI Design",
+      "card2Name": "Nicolás",
+      "card2Desc": "I design intuitive experiences that connect with people."
+    },
     "CTA": {
-      "headline1": "Ready to build the",
-      "headline2": "next level?",
-      "body": "We are scheduling projects for 2026. Let's talk about your vision.",
-      "cta": "Start a project"
+      "headline1": "Have a project",
+      "headline2": "in mind?",
+      "body": "Schedule a free call and tell us about your idea.",
+      "cta": "Contact us"
     }
   },
   "Proyectos": {

@@ -41,7 +41,7 @@ export function SobreNosotrosBody() {
   return (
     <>
       {/* Hero — solo texto, centrado */}
-      <section className="pady-section bg-linear-to-r  from-accent/20 via-white/80 to-primary/30 ">
+      <section className="bg-linear-to-r from-accent/20 via-white/80 to-primary/30 py-40 lg:py-52">
         <div className="container-site  ">
           <motion.div
             variants={staggerContainer}
@@ -73,8 +73,19 @@ export function SobreNosotrosBody() {
       </section>
 
       {/* Misión / Visión — 2 cards ancho completo */}
-      <section className="py-24 md:py-32 bg-surface/10">
+      <section className="py-24 md:py-32 bg-white">
         <div className="container-site max-w-6xl">
+          <div className="mb-16">
+            <motion.h2
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="mb-4"
+            >
+              {t("misionVision")}
+            </motion.h2>
+          </div>
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -106,7 +117,7 @@ export function SobreNosotrosBody() {
       </section>
 
       {/* Cómo trabajamos — 4 pasos numerados */}
-      <section className="py-24 md:py-32">
+      <section className="py-24 md:py-32 bg-surface/40">
         <div className="container-site">
           <div className="mb-14">
             <motion.span
@@ -247,7 +258,7 @@ export function SobreNosotrosBody() {
             >
               {t("teamHeadline")}
             </motion.h2>
-            <motion.p
+            {/* <motion.p
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
@@ -255,7 +266,7 @@ export function SobreNosotrosBody() {
               className="text-secondary"
             >
               {t("teamSubheadline")}
-            </motion.p>
+            </motion.p> */}
           </div>
 
           <motion.div
@@ -357,7 +368,7 @@ export function SobreNosotrosBody() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 md:py-32">
+      {/* <section className="py-24 md:py-32">
         <div className="container-site">
           <div className="relative rounded-md overflow-hidden bg-linear-to-br mesh-gradient-bg border border-gray-100 py-20 px-8 md:py-28 md:px-20 text-center">
             <motion.div
@@ -381,7 +392,7 @@ export function SobreNosotrosBody() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

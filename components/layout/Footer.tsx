@@ -1,104 +1,62 @@
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
-import { RiInstagramLine, RiLinkedinLine, RiGithubLine } from "react-icons/ri";
+import { RiInstagramLine } from "react-icons/ri";
 import Image from "next/image";
+import { FaLinkedinIn } from "react-icons/fa";
+
 export function Footer() {
   const t = useTranslations("Footer");
-  const navT = useTranslations("Nav");
 
   return (
-    <footer className="mesh-gradient-bg  border-secondary/20 pt-16 pb-10">
+    <footer className="mesh-gradient-bg border-t border-secondary/10 pt-16 pb-10">
       <div className="container-site">
-        <div className="flex flex-row justify-between gap-10 mb-12">
+        {/* Main grid */}
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10 mb-12">
           {/* Brand */}
-          <div className="">
+          <div className="flex flex-col gap-4 max-w-xs">
             <Image
               src="/logo/logo-footer.png"
               alt="Logo ATBA"
               width={100}
               height={100}
             />
-            <p className="text-sm text-secondary leading-relaxed max-w-xs mt-3">
+            <p className="text-sm text-secondary leading-relaxed">
               {t("tagline")}
             </p>
           </div>
 
-          {/* Navigation */}
-          {/* <div>
-            <p className="text-xs font-bold tracking-widest uppercase text-secondary-400 mb-5">
-              {t("navigation")}
-            </p>
-            <nav className="flex flex-col gap-3">
-              <Link
-                href="/"
-                className="text-sm text-secondary-600 hover:text-primary transition-colors duration-200"
-              >
-                {navT("inicio")}
-              </Link>
-              <Link
-                href="/proyectos"
-                className="text-sm text-secondary-600 hover:text-primary transition-colors duration-200"
-              >
-                {t("projects")}
-              </Link>
-              <Link
-                href="/contacto"
-                className="text-sm text-secondary hover:text-primary transition-colors duration-200"
-              >
-                {t("contact")}
-              </Link>
-              <Link
-                href="/sobre-nosotros"
-                className="text-sm text-secondary hover:text-primary transition-colors duration-200"
-              >
-                {t("about")}
-              </Link>
-            </nav>
-          </div> */}
-
           {/* Social */}
-          <div>
-            <p className="text-xs font-bold tracking-widest uppercase text-secondary mb-5 mr-62">
+          <div className="flex flex-col gap-4">
+            <p className="text-xs font-bold tracking-widest uppercase text-secondary">
               {t("social")}
             </p>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-row gap-3">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/atbastudio/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-secondary hover:text-primary transition-colors duration-200"
+                aria-label="Instagram"
+                className="w-10 h-10 rounded-full border border-secondary/25 flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors duration-200"
               >
-                <RiInstagramLine size={16} />
-                {t("instagram")}
+                <RiInstagramLine size={18} />
               </a>
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-secondary hover:text-primary transition-colors duration-200"
+                aria-label="LinkedIn"
+                className="w-10 h-10 rounded-full border border-secondary/25 flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors duration-200"
               >
-                <RiLinkedinLine size={16} />
-                {t("linkedin")}
-              </a>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-secondary hover:text-primary transition-colors duration-200"
-              >
-                <RiGithubLine size={16} />
-                {t("github")}
+                <FaLinkedinIn size={18} />
               </a>
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-secondary/20 pt-8 flex flex-col md:flex-row justify-end items-center gap-3">
-          <p className="text-xs text-secondary ">
+        <div className="border-t border-secondary/20 pt-8 flex justify-end">
+          <p className="text-xs text-secondary">
             © {new Date().getFullYear()} ATBA Studio. {t("copyright")}
           </p>
-          {/* <p className="text-xs text-secondary">Buenos Aires, Argentina</p> */}
         </div>
       </div>
     </footer>

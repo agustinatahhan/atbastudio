@@ -36,11 +36,11 @@ export function ProyectosGrid() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
                   className={`group flex flex-col ${
-                    project.reverse ? "md:flex-row-reverse" : "md:flex-row"
-                  } gap-8 md:gap-16 items-center`}
+                    project.reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+                  } gap-8 lg:gap-16 items-stretch`}
                 >
                   {/* Image */}
-                  <div className="w-full md:w-3/5 relative aspect-16/10 rounded-md overflow-hidden bg-gray-100">
+                  <div className="w-full lg:w-3/5 relative aspect-16/10 rounded-md overflow-hidden bg-gray-100">
                     <Image
                       src={project.image}
                       alt={t.title}
@@ -51,21 +51,23 @@ export function ProyectosGrid() {
                   </div>
 
                   {/* Text */}
-                  <div className="w-full md:w-2/5 flex flex-col items-start gap-4">
-                    <p className="text-xs font-bold tracking-widest uppercase text-secondary">
-                      {t.category}
-                    </p>
-                    <h3 className="text-gray-900 text-3xl md:text-4xl">
-                      {t.title}
-                    </h3>
-                    <p className="text-gray-500 leading-relaxed">
-                      {t.description}
-                    </p>
+                  <div className="w-full lg:w-2/5 flex flex-col items-start justify-between gap-8">
+                    <div className="flex flex-col gap-4">
+                      <p className="text-xs font-bold tracking-widest uppercase text-secondary">
+                        {t.category}
+                      </p>
+                      <h3 className="text-gray-900 text-3xl md:text-4xl">
+                        {t.title}
+                      </h3>
+                      <p className="text-gray-500 leading-relaxed">
+                        {t.description}
+                      </p>
+                    </div>
                     <a
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-outline mt-2"
+                      className="btn-outline"
                     >
                       {locale === "es" ? "Ver sitio" : "View site"}
                     </a>

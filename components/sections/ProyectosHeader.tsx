@@ -8,7 +8,7 @@ export function ProyectosHeader() {
   const t = useTranslations("Proyectos.Header");
 
   return (
-    <section className="pady-section bg-linear-to-r from-accent/20 via-white/80 to-primary/30">
+    <section className="bg-linear-to-r from-accent/20 via-white/80 to-primary/30 py-40 lg:py-52">
       <div className="container-site">
         <motion.div
           variants={staggerContainer}

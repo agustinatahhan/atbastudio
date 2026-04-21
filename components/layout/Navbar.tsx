@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl'
 import { usePathname } from '@/i18n/routing'
 import { Link } from '@/i18n/routing'
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher'
-import { Button } from '@/components/ui/Button'
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri'
 import Image from 'next/image'
 type NavLink = {
@@ -20,8 +19,8 @@ export function Navbar() {
 
   const links: NavLink[] = [
     { href: '/', label: t('inicio') },
-    { href: '/proyectos', label: t('projects') },
     { href: '/sobre-nosotros', label: t('about') },
+    { href: '/proyectos', label: t('projects') },
     { href: '/contacto', label: t('contact') },
   ]
 

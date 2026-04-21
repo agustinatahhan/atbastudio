@@ -1,34 +1,33 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { useTranslations } from 'next-intl'
-import { Link } from '@/i18n/routing'
-import { ProjectCard } from '@/components/ui/ProjectCard'
-import { Button } from '@/components/ui/Button'
-import { fadeUp, staggerContainer } from '@/lib/animations'
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
+import { ProjectCard } from "@/components/ui/ProjectCard";
+import { fadeUp, staggerContainer } from "@/lib/animations";
 
 export function Projects() {
-  const t = useTranslations('Home.Projects')
+  const t = useTranslations("Home.Projects");
 
   const featured = [
     {
-      slug: 'guia',
-      image: '/projects/guia/guia1.png',
-      titleKey: 'guia.title' as const,
-      categoryKey: 'guia.category' as const,
-      descriptionKey: 'guia.description' as const,
+      slug: "guia",
+      image: "/projects/guia/guia1.png",
+      titleKey: "guia.title" as const,
+      categoryKey: "guia.category" as const,
+      descriptionKey: "guia.description" as const,
     },
     {
-      slug: 'photoscape',
-      image: '/projects/photoscape/photoscape1.jpeg',
-      titleKey: 'photoscape.title' as const,
-      categoryKey: 'photoscape.category' as const,
-      descriptionKey: 'photoscape.description' as const,
+      slug: "itiba",
+      image: "/projects/itiba/itiba1.jpeg",
+      titleKey: "itiba.title" as const,
+      categoryKey: "itiba.category" as const,
+      descriptionKey: "itiba.description" as const,
     },
-  ]
+  ];
 
   return (
-    <section className="py-24 md:py-32 bg-surface/50">
+    <section className="py-24 md:py-32 bg-white">
       <div className="container-site">
         {/* Header row */}
         <motion.div
@@ -39,24 +38,21 @@ export function Projects() {
           className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16"
         >
           <div>
-            <motion.p
+            <motion.span
               variants={fadeUp}
-              className="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-4"
+              className="inline-block px-4 py-1.5 rounded-md bg-primary/10 text-xs font-bold tracking-widest uppercase text-primary mb-6"
             >
-              {t('label')}
-            </motion.p>
+              {t("label")}
+            </motion.span>
             <motion.h2 variants={fadeUp} className="text-gray-900">
-              {t('headline1')}
-              <br />
-              {t('headline2')}
+              {t("headline1")}
+              {/* <br />
+              {t("headline2")} */}
             </motion.h2>
           </div>
 
           <motion.div variants={fadeUp}>
-            <Link href="/proyectos" className='btn-primary'>
-              {/* <Button  size="md">
-                {t('viewAll')}
-              </Button> */}
+            <Link href="/proyectos" className="btn-primary">
               {t("viewAll")}
             </Link>
           </motion.div>
@@ -72,11 +68,11 @@ export function Projects() {
               description={t(project.descriptionKey)}
               image={project.image}
               href="/proyectos"
-              viewLabel={t('viewAll')}
+              viewLabel={t("viewAll")}
             />
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

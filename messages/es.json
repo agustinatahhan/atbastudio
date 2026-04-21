@@ -30,37 +30,64 @@
       "pillar3Title": "Resolución de Problemas",
       "pillar3Desc": "Nos metemos en el desafío real detrás de cada pedido. Desde la arquitectura hasta las decisiones de UX, pensamos con claridad para que el producto final realmente funcione."
     },
+    "Pillars": {
+      "label": "Por qué ATBA",
+      "headline": "Lo que nos diferencia.",
+      "pillar1Title": "Sin plantillas",
+      "pillar1Desc": "Cada sitio que hacemos empieza desde cero. Tu negocio no es genérico, tu sitio tampoco debería serlo.",
+      "pillar2Title": "Diseño y desarrollo a medida",
+      "pillar2Desc": "Desarrollamos en Next.js. Eso se traduce en velocidad real, diseño exacto y código que escala.",
+      "pillar3Title": "Acompañamiento real",
+      "pillar3Desc": "Te capacitamos y seguimos disponibles después del lanzamiento de tu sitio."
+    },
     "Services": {
       "label": "Servicios",
       "headline": "Lo que construimos",
-      "card1Title": "Desarrollo Web",
-      "card1Desc": "Diseñamos y desarrollamos sitios y aplicaciones web rápidas, escalables y con una experiencia de usuario impecable.",
-      "card2Title": "Diseño UX/UI",
-      "card2Desc": "Creamos interfaces intuitivas y visualmente poderosas que conectan con los usuarios y elevan tu producto digital.",
-      "card3Title": "Software a Medida",
-      "card3Desc": "Construimos soluciones tecnológicas personalizadas adaptadas exactamente a los procesos y objetivos de tu negocio."
+      "subtitle": "Estos son los tipos de sitios que desarrollamos.",
+      "card1Title": "Landing Pages",
+      "card1Desc": "Páginas de conversión diseñadas desde cero. Optimizadas para que el visitante haga lo que necesitás: comprar, reservar, contactar o suscribirse.",
+      "card2Title": "Sitios Web a Medida",
+      "card2Desc": "Sitios informativos, portfolios y plataformas de reservas desarrollados en Next.js. Rápidos, escalables y con diseño único adaptado a tu marca.",
+      "card3Title": "E-commerce",
+      "card3Desc": "Tiendas online construidas a medida con foco en experiencia de compra, velocidad de carga y diseño que convierte.",
+      "card4Title": "Rediseño Web",
+      "card4Desc": "Para negocios que ya tienen presencia online pero necesitan renovarse. Auditamos lo que existe, redefinimos la dirección visual y reconstruimos desde cero.",
+      "ctaText": "¿No sabés cuál necesitás?",
+      "ctaLink": "Hablemos"
     },
     "Projects": {
-      "label": "Proyectos Destacados",
-      "headline1": "Nuestros trabajos",
-      "headline2": "más recientes.",
-      "viewAll": "Ver todos los proyectos",
+      "label": "Nuestro Trabajo",
+      "headline1": "Proyectos Destacados",
+      "headline2": "cómo pensamos y construimos.",
+      "viewAll": "Ver todos",
       "guia": {
         "title": "Guía Gastronómica",
         "category": "Gastronomía / Web",
-        "description": "Una guía gastronómica que celebra la cocina dominicana — restaurantes, recetas y las historias detrás de cada plato."
+        "description": "Una guía gastronómica digital que celebra la identidad culinaria dominicana — destinos, platos tradicionales y rutas culturales."
       },
-      "photoscape": {
-        "title": "Photoscape",
-        "category": "Fotografía / Portafolio",
-        "description": "Portfolio de paisajismo donde las imágenes hablan primero — minimal, espacioso y completamente inmersivo."
+      "itiba": {
+        "title": "Itibá Agencia Gastronómica",
+        "category": "Agencia / Web",
+        "description": "Plataforma culinaria y cultural que nace desde el Caribe para repensar la gastronomía con identidad, método y visión de futuro."
       }
     },
+    "MiniNosotros": {
+      "label": "Quiénes somos",
+      "title": "Diseño y código, en un solo equipo.",
+      "body": "Trabajamos juntos desde el inicio de cada proyecto para que lo que se diseña sea exactamente lo que se construye. Sin intermediarios, sin malentendidos.",
+      "cta": "Conocernos mejor",
+      "card1Role": "Desarrollo Web",
+      "card1Name": "Agustina",
+      "card1Desc": "Construyo soluciones eficientes, escalables y bien estructuradas.",
+      "card2Role": "Diseño UX/UI",
+      "card2Name": "Nicolás",
+      "card2Desc": "Diseño experiencias intuitivas que conectan con las personas."
+    },
     "CTA": {
-      "headline1": "¿Listo para construir el",
-      "headline2": "siguiente nivel?",
-      "body": "Estamos agendando proyectos para 2026. Hablemos sobre tu visión.",
-      "cta": "Inicia tu sitio web"
+      "headline1": "¿Tenés un proyecto",
+      "headline2": "en mente?",
+      "body": "Agendá una llamada gratis y contános sobre tu idea.",
+      "cta": "Contactanos"
     }
   },
   "Proyectos": {
@@ -144,6 +171,7 @@
       "heroBody": "Somos un estudio que combina diseño y desarrollo para crear soluciones rápidas, claras y efectivas.",
       "col1Label": "Quiénes Somos",
       "whoText": "Somos un estudio que combina diseño y desarrollo para crear soluciones digitales rápidas, claras y efectivas.",
+      "misionVision": "Lo que buscamos",
       "col2Label": "Misión",
       "missionBody": "Ayudar a personas y negocios a llevar sus ideas al mundo digital mediante soluciones claras, eficientes y centradas en el usuario, cuidando tanto la calidad técnica como la experiencia visual.",
       "col3Label": "Visión",
