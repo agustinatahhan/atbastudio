@@ -27,7 +27,7 @@ export function CTA() {
 
               <motion.p
                 variants={fadeUp}
-                className="max-w-xl mx-auto text-secondary mb-10"
+                className="max-w-xl mx-auto text-secondary mb-10 text-center"
               >
                 {t("body")}
               </motion.p>

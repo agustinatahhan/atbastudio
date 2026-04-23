@@ -13,8 +13,8 @@
       "titleHighlight": "un sitio web",
       "title2": "que te represente",
       "subtitle": "Diseñamos y desarrollamos sitios a medida, sin plantillas. Solo código propio, buen diseño y resultados reales",
-      "ctaPrimary": "Nuestros trabajos",
-      "ctaSecondary": "Inicia tu proyecto"
+      "ctaPrimary": "Ver lo que hacemos",
+      "ctaSecondary": "Empecemos tu proyecto"
     },
     "About": {
       "label": "Nuestra visión",
@@ -36,7 +36,7 @@
       "pillar1Title": "Sin plantillas",
       "pillar1Desc": "Cada sitio que hacemos empieza desde cero. Tu negocio no es genérico, tu sitio tampoco debería serlo.",
       "pillar2Title": "Diseño y desarrollo a medida",
-      "pillar2Desc": "Desarrollamos en Next.js. Eso se traduce en velocidad real, diseño exacto y código que escala.",
+      "pillar2Desc": "Usamos tecnología de vanguardia. Eso se traduce en velocidad real, diseño exacto y código que crece con vos.",
       "pillar3Title": "Acompañamiento real",
       "pillar3Desc": "Te capacitamos y seguimos disponibles después del lanzamiento de tu sitio."
     },
@@ -47,7 +47,7 @@
       "card1Title": "Landing Pages",
       "card1Desc": "Páginas de conversión diseñadas desde cero. Optimizadas para que el visitante haga lo que necesitás: comprar, reservar, contactar o suscribirse.",
       "card2Title": "Sitios Web a Medida",
-      "card2Desc": "Sitios informativos, portfolios y plataformas de reservas desarrollados en Next.js. Rápidos, escalables y con diseño único adaptado a tu marca.",
+      "card2Desc": "Sitios informativos, portfolios y plataformas de reservas construidos completamente a medida. Rápidos, escalables y con diseño único adaptado a tu marca.",
       "card3Title": "E-commerce",
       "card3Desc": "Tiendas online construidas a medida con foco en experiencia de compra, velocidad de carga y diseño que convierte.",
       "card4Title": "Rediseño Web",
@@ -59,7 +59,7 @@
       "label": "Nuestro Trabajo",
       "headline1": "Proyectos Destacados",
       "headline2": "cómo pensamos y construimos.",
-      "viewAll": "Ver todos",
+      "viewAll": "Ver todos los proyectos",
       "guia": {
         "title": "Guía Gastronómica",
         "category": "Gastronomía / Web",
@@ -75,7 +75,7 @@
       "label": "Quiénes somos",
       "title": "Diseño y código, en un solo equipo.",
       "body": "Trabajamos juntos desde el inicio de cada proyecto para que lo que se diseña sea exactamente lo que se construye. Sin intermediarios, sin malentendidos.",
-      "cta": "Conocernos mejor",
+      "cta": "Conocé al equipo →",
       "card1Role": "Desarrollo Web",
       "card1Name": "Agustina",
       "card1Desc": "Construyo soluciones eficientes, escalables y bien estructuradas.",
@@ -86,8 +86,35 @@
     "CTA": {
       "headline1": "¿Tenés un proyecto",
       "headline2": "en mente?",
-      "body": "Agendá una llamada gratis y contános sobre tu idea.",
-      "cta": "Contactanos"
+      "body": "Pedí tu presupuesto sin cargo y contanos sobre tu idea. Te respondemos en menos de 24 horas.",
+      "cta": "Pedí tu presupuesto gratis"
+    },
+    "Testimonials": {
+      "label": "Lo que dicen de nosotros",
+      "headline": "Clientes que confiaron en nosotros.",
+      "t1Quote": "Trabajar con ATBA fue una experiencia excelente. Entendieron exactamente lo que necesitábamos y el resultado superó nuestras expectativas.",
+      "t1Name": "Nombre del cliente",
+      "t1Project": "Nombre del proyecto",
+      "t2Quote": "El proceso fue claro de principio a fin. Cumplieron los tiempos acordados y la comunicación fue impecable durante todo el proyecto.",
+      "t2Name": "Nombre del cliente",
+      "t2Project": "Nombre del proyecto",
+      "t3Quote": "Diseño y código trabajando juntos se nota en el producto final. Muy buena experiencia, lo recomendaría sin dudarlo.",
+      "t3Name": "Nombre del cliente",
+      "t3Project": "Nombre del proyecto"
+    },
+    "FAQ": {
+      "label": "Preguntas frecuentes",
+      "headline": "Respondemos tus dudas.",
+      "faq1Q": "¿Cuánto cuesta un sitio web?",
+      "faq1A": "Cada proyecto es diferente, por eso trabajamos con presupuestos a medida. Podés escribirnos con una idea de lo que necesitás y te enviamos un presupuesto sin cargo en menos de 24 horas.",
+      "faq2Q": "¿Cuánto tiempo tarda el proceso?",
+      "faq2A": "Un proyecto estándar toma entre 2 y 4 semanas desde el primer contacto hasta el lanzamiento. Los plazos dependen del alcance, la complejidad y la velocidad de retroalimentación.",
+      "faq3Q": "¿Qué necesito tener listo para empezar?",
+      "faq3A": "Solo necesitás tener clara tu idea. Nosotros te guiamos en el resto: textos, imágenes, estructura y estrategia. Si ya tenés materiales, perfecto, pero no es un requisito.",
+      "faq4Q": "¿Incluyen soporte después del lanzamiento?",
+      "faq4A": "Sí. Una vez que el sitio está en línea, te capacitamos para que puedas manejarlo vos mismo y quedamos disponibles para consultas y ajustes durante el período de acompañamiento.",
+      "faq5Q": "¿Trabajan con clientes fuera de Argentina?",
+      "faq5A": "Sí, trabajamos con clientes de toda Latinoamérica y otros países. Todo el proceso es remoto, con comunicación clara y reuniones virtuales cuando hace falta."
     }
   },
   "Proyectos": {
@@ -130,14 +157,14 @@
       },
       "ctaHeadline": "¿Listo para construir algo grande?",
       "ctaBody": "Transformamos tu visión en una realidad digital tangible. Hablemos sobre tu próximo desafío.",
-      "ctaBtn": "Escribinos ahora"
+      "ctaBtn": "Contanos tu proyecto"
     }
   },
   "Contacto": {
     "Header": {
       "title1": "¿Hablamos? Contanos tu próximo",
       "titleHighlight": "gran proyecto.",
-      "subtitle": "Estamos listos para transformar tus ideas en experiencias digitales excepcionales. Unite a la lista de empresas que confían en ATBA Studio."
+      "subtitle": "Estamos listos para transformar tus ideas en productos digitales"
     },
     "Form": {
       "nameLabel": "Nombre",
@@ -171,6 +198,7 @@
       "heroBody": "Somos un estudio que combina diseño y desarrollo para crear soluciones rápidas, claras y efectivas.",
       "col1Label": "Quiénes Somos",
       "whoText": "Somos un estudio que combina diseño y desarrollo para crear soluciones digitales rápidas, claras y efectivas.",
+      "misionVisionLabel": "Misión y Visión",
       "misionVision": "Lo que buscamos",
       "col2Label": "Misión",
       "missionBody": "Ayudar a personas y negocios a llevar sus ideas al mundo digital mediante soluciones claras, eficientes y centradas en el usuario, cuidando tanto la calidad técnica como la experiencia visual.",
@@ -195,19 +223,30 @@
       "check3": "Comunicación clara y acompañamiento en todo el proceso",
       "check4": "Soluciones a medida, no plantillas genéricas",
       "check5": "Compromiso con la calidad y los detalles",
+      "teamLabel": "El equipo",
       "teamHeadline": "Nuestro Equipo",
       "teamSubheadline": "Diseño y desarrollo, dos perspectivas en un mismo proyecto.",
       "member1Role": "Desarrolladora Web",
       "member1Name": "Agustina",
-      "member1Bio": "Me enfoco en construir soluciones eficientes, escalables y bien estructuradas.",
+      "member1Bio": "Desarrollo soluciones eficientes, escalables y bien estructuradas.",
       "member2Role": "Diseñador UX/UI",
       "member2Name": "Nicolás",
       "member2Bio": "Diseño experiencias intuitivas que conectan con las personas.",
       "missionHeadline": "Nos encanta escuchar nuevas ideas.",
       "ctaHeadline1": "¿Listo para ver lo que",
       "ctaHeadline2": "hemos construido?",
-      "ctaBtn": "Ver nuestros proyectos"
+      "ctaBtn": "Explorá nuestros trabajos"
     }
+  },
+  "Seo": {
+    "homeTitle": "ATBA Studio | Diseño y Desarrollo Web a Medida",
+    "homeDescription": "Diseñamos y desarrollamos sitios web a medida, sin plantillas. Estudio boutique de diseño y desarrollo digital en Argentina.",
+    "proyectosTitle": "Proyectos | ATBA Studio",
+    "proyectosDescription": "Explorá nuestro portfolio de sitios web, e-commerce y plataformas digitales construidos completamente a medida para cada cliente.",
+    "contactoTitle": "Contacto | ATBA Studio",
+    "contactoDescription": "¿Tenés un proyecto en mente? Pedí tu presupuesto sin cargo y contanos sobre tu idea. Respondemos en menos de 24 horas.",
+    "sobreNosotrosTitle": "Nosotros | ATBA Studio",
+    "sobreNosotrosDescription": "Somos Agustina y Nicolás, un equipo de diseño y desarrollo que trabaja junto para crear productos digitales únicos y efectivos."
   },
   "Footer": {
     "tagline": "Un estudio digital moderno que construye experiencias web de alta calidad y productos digitales.",

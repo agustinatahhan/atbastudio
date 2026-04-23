@@ -32,9 +32,9 @@ export function ProjectCard({
 
       {/* Meta */}
       <div className="flex flex-col gap-2">
-        <p className="text-xs font-bold tracking-widest uppercase text-secondary">
+        <span className="inline-block self-start px-3 py-1 rounded-md bg-primary/10 text-xs font-bold tracking-widest uppercase text-primary">
           {category}
-        </p>
+        </span>
         <h3 className="text-gray-900">{title}</h3>
         <p className="text-sm text-gray-500 leading-relaxed">{description}</p>
         {/* <Link

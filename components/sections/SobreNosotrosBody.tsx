@@ -3,12 +3,9 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Link } from "@/i18n/routing";
-import { Button } from "@/components/ui/Button";
 import {
   RiRocketLine,
   RiEyeLine,
-  RiCheckLine,
   RiLinkedinBoxFill,
 } from "react-icons/ri";
 import { fadeUp, staggerContainer } from "@/lib/animations";
@@ -33,7 +30,6 @@ const steps = [
   { num: "04", titleKey: "step4Title" as const, descKey: "step4Desc" as const },
 ];
 
-const checkKeys = ["check1", "check2", "check3", "check4", "check5"] as const;
 
 export function SobreNosotrosBody() {
   const t = useTranslations("SobreNosotros.Body");
@@ -41,41 +37,39 @@ export function SobreNosotrosBody() {
   return (
     <>
       {/* Hero — solo texto, centrado */}
-      <section className="bg-linear-to-r from-accent/20 via-white/80 to-primary/30 py-40 lg:py-52">
-        <div className="container-site  ">
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            animate="visible"
-            className="text-left space-y-6"
-          >
-            <motion.h2 variants={fadeUp} className="leading-tight ">
-              {t("heroHeadline")}
-              <br />
-              <span className="text-gradient-primary">
-                {t("heroHighlight")}
-              </span>
-            </motion.h2>
-
-            <motion.p
-              variants={fadeUp}
-              className="text-xl text-secondary leading-relaxed max-w-xl"
-            >
-              {t("heroBody")}
-            </motion.p>
-
-            {/* <motion.span
-              variants={fadeUp}
-              className="block w-12 h-1 bg-primary rounded-full"
-            /> */}
-          </motion.div>
-        </div>
+       <section className="bg-linear-to-r from-accent/20 via-white/80 to-primary/30 py-40 lg:py-52">
+      
+         <div className="container-site  ">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+          className="max-w-2xl"
+        >
+          <motion.h2 variants={fadeUp} className="text-gray-900 leading-tight mb-6">
+            {t('heroHeadline')}{' '}
+            <span className="text-gradient-primary">{t('heroHighlight')}</span>
+          </motion.h2>
+          <motion.p variants={fadeUp} className="max-w-2xl text-secondary">
+            {t('heroBody')}
+          </motion.p>
+        </motion.div>
+      </div>
       </section>
 
       {/* Misión / Visión — 2 cards ancho completo */}
       <section className="py-24 md:py-32 bg-white">
         <div className="container-site max-w-6xl">
           <div className="mb-16">
+            <motion.span
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="inline-block px-4 py-1.5 rounded-md bg-primary/10 text-xs font-bold tracking-widest uppercase text-primary mb-6"
+            >
+              {t("misionVisionLabel")}
+            </motion.span>
             <motion.h2
               variants={fadeUp}
               initial="hidden"
@@ -91,7 +85,7 @@ export function SobreNosotrosBody() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-6"
           >
             {columns.map(({ icon: Icon, labelKey, textKey }) => (
               <div
@@ -249,6 +243,15 @@ export function SobreNosotrosBody() {
       <section className="py-24 md:py-32">
         <div className="container-site">
           <div className="mb-16">
+            <motion.span
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="inline-block px-4 py-1.5 rounded-md bg-primary/10 text-xs font-bold tracking-widest uppercase text-primary mb-6"
+            >
+              {t("teamLabel")}
+            </motion.span>
             <motion.h2
               variants={fadeUp}
               initial="hidden"

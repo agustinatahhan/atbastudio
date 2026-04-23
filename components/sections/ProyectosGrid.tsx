@@ -53,9 +53,9 @@ export function ProyectosGrid() {
                   {/* Text */}
                   <div className="w-full lg:w-2/5 flex flex-col items-start justify-between gap-8">
                     <div className="flex flex-col gap-4">
-                      <p className="text-xs font-bold tracking-widest uppercase text-secondary">
+                      <span className="inline-block self-start px-3 py-1 rounded-md bg-primary/10 text-xs font-bold tracking-widest uppercase text-primary">
                         {t.category}
-                      </p>
+                      </span>
                       <h3 className="text-gray-900 text-3xl md:text-4xl">
                         {t.title}
                       </h3>
@@ -69,7 +69,7 @@ export function ProyectosGrid() {
                       rel="noopener noreferrer"
                       className="btn-outline"
                     >
-                      {locale === "es" ? "Ver sitio" : "View site"}
+                      {locale === "es" ? "Ver proyecto en vivo →" : "See it live →"}
                     </a>
                   </div>
                 </motion.article>

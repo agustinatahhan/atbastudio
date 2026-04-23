@@ -35,7 +35,7 @@ export function Projects() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16"
+          className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-16"
         >
           <div>
             <motion.span
@@ -59,7 +59,7 @@ export function Projects() {
         </motion.div>
 
         {/* Projects grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16">
           {featured.map((project) => (
             <ProjectCard
               key={project.slug}

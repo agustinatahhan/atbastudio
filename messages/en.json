@@ -13,8 +13,8 @@
       "titleHighlight": "and development of",
       "title2": "digital experiences.",
       "subtitle": "Turning complex ideas into simple, fast, and user-friendly products.",
-      "ctaPrimary": "View our work",
-      "ctaSecondary": "Start a project"
+      "ctaPrimary": "See what we've built",
+      "ctaSecondary": "Start your project"
     },
     "About": {
       "label": "Our vision",
@@ -36,7 +36,7 @@
       "pillar1Title": "No templates",
       "pillar1Desc": "Every site we build starts from scratch. Your business isn't generic — your website shouldn't be either.",
       "pillar2Title": "Design and development from scratch",
-      "pillar2Desc": "We build with Next.js. That means real speed, pixel-perfect design, and code that scales.",
+      "pillar2Desc": "We use cutting-edge technology. That means real speed, pixel-perfect design, and code that grows with your business.",
       "pillar3Title": "Real support",
       "pillar3Desc": "We onboard you and stay available after your site goes live."
     },
@@ -47,7 +47,7 @@
       "card1Title": "Landing Pages",
       "card1Desc": "Conversion pages designed from scratch. Optimized so visitors do what you need: buy, book, contact, or subscribe.",
       "card2Title": "Custom Websites",
-      "card2Desc": "Informational sites, portfolios, and booking platforms built with Next.js. Fast, scalable, and uniquely designed for your brand.",
+      "card2Desc": "Informational sites, portfolios, and booking platforms built completely from scratch. Fast, scalable, and uniquely designed for your brand.",
       "card3Title": "E-commerce",
       "card3Desc": "Online stores built from scratch with a focus on shopping experience, loading speed, and design that converts.",
       "card4Title": "Website Redesign",
@@ -59,7 +59,7 @@
       "label": "Our Work",
       "headline1": "Futured Projects",
       "headline2": "how we think and build.",
-      "viewAll": "View all",
+      "viewAll": "See all projects",
       "guia": {
         "title": "Dominican Gastronomic Guide",
         "category": "Food & Culture / Web",
@@ -75,7 +75,7 @@
       "label": "Who we are",
       "title": "Design and code, one team.",
       "body": "We work together from the start of every project so what gets designed is exactly what gets built. No middlemen, no lost in translation.",
-      "cta": "Get to know us",
+      "cta": "Meet the team →",
       "card1Role": "Web Development",
       "card1Name": "Agustina",
       "card1Desc": "I build efficient, scalable, and well-structured solutions.",
@@ -86,8 +86,35 @@
     "CTA": {
       "headline1": "Have a project",
       "headline2": "in mind?",
-      "body": "Schedule a free call and tell us about your idea.",
-      "cta": "Contact us"
+      "body": "Request a free quote and tell us about your idea. We'll get back to you within 24 hours.",
+      "cta": "Get your free quote"
+    },
+    "Testimonials": {
+      "label": "What our clients say",
+      "headline": "Clients who trusted us.",
+      "t1Quote": "Working with ATBA was an excellent experience. They understood exactly what we needed and the result exceeded our expectations.",
+      "t1Name": "Client name",
+      "t1Project": "Project name",
+      "t2Quote": "The process was clear from start to finish. They delivered on time and communication was outstanding throughout the entire project.",
+      "t2Name": "Client name",
+      "t2Project": "Project name",
+      "t3Quote": "Design and code working together really shows in the final product. Great experience — I'd recommend them without hesitation.",
+      "t3Name": "Client name",
+      "t3Project": "Project name"
+    },
+    "FAQ": {
+      "label": "FAQ",
+      "headline": "Answers to your questions.",
+      "faq1Q": "How much does a website cost?",
+      "faq1A": "Every project is different, which is why we work with custom quotes. Send us a message with your idea and we'll get back to you with a free, no-obligation quote within 24 hours.",
+      "faq2Q": "How long does the process take?",
+      "faq2A": "A standard project takes between 2 and 4 weeks from first contact to launch. Timelines depend on scope, complexity, and how quickly feedback comes in.",
+      "faq3Q": "What do I need to have ready to get started?",
+      "faq3A": "Just a clear idea of what you need. We'll guide you through everything else — copy, images, structure, and strategy. If you already have materials, great, but it's not required.",
+      "faq4Q": "Do you offer support after launch?",
+      "faq4A": "Yes. Once your site is live, we onboard you so you can manage it yourself, and we stay available for questions and adjustments during the support period.",
+      "faq5Q": "Do you work with clients outside of Argentina?",
+      "faq5A": "Yes, we work with clients across Latin America and beyond. The entire process is handled remotely, with clear communication and virtual meetings whenever needed."
     }
   },
   "Proyectos": {
@@ -130,7 +157,7 @@
       },
       "ctaHeadline": "Ready to build something great?",
       "ctaBody": "We transform your vision into a tangible digital reality. Let's talk about your next challenge.",
-      "ctaBtn": "Write to us now"
+      "ctaBtn": "Tell us about your project"
     }
   },
   "Contacto": {
@@ -171,6 +198,7 @@
       "heroBody": "We are a studio that combines design and development to create fast, clear, and effective solutions.",
       "col1Label": "Who We Are",
       "whoText": "We are a studio that combines design and development to create fast, clear, and effective digital solutions.",
+      "misionVisionLabel": "Mission & Vision",
       "col2Label": "Mission",
       "missionBody": "To help people and businesses bring their ideas to the digital world through clear, efficient, and user-centered solutions — caring about both technical quality and visual experience.",
       "col3Label": "Vision",
@@ -194,6 +222,7 @@
       "check3": "Clear communication and support throughout the process",
       "check4": "Tailored solutions, not generic templates",
       "check5": "Commitment to quality and detail",
+      "teamLabel": "The team",
       "teamHeadline": "Our Team",
       "teamSubheadline": "Design and development — two perspectives, one product.",
       "member1Role": "Web Developer",
@@ -205,8 +234,18 @@
       "missionHeadline": "We love hearing new ideas.",
       "ctaHeadline1": "Ready to see what",
       "ctaHeadline2": "we've built?",
-      "ctaBtn": "View our projects"
+      "ctaBtn": "Explore our work"
     }
+  },
+  "Seo": {
+    "homeTitle": "ATBA Studio | Custom Web Design & Development",
+    "homeDescription": "We design and develop custom websites from scratch — no templates. A boutique digital design and development studio from Argentina.",
+    "proyectosTitle": "Projects | ATBA Studio",
+    "proyectosDescription": "Explore our portfolio of custom-built websites, e-commerce stores, and digital platforms crafted for each client.",
+    "contactoTitle": "Contact | ATBA Studio",
+    "contactoDescription": "Have a project in mind? Request a free quote and tell us about your idea. We'll get back to you within 24 hours.",
+    "sobreNosotrosTitle": "About Us | ATBA Studio",
+    "sobreNosotrosDescription": "We are Agustina and Nicolás — a design and development duo building unique and effective digital products together."
   },
   "Footer": {
     "tagline": "A modern digital studio building high-quality web experiences and digital products.",

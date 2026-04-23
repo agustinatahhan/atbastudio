@@ -10,7 +10,7 @@ export function Footer() {
     <footer className="mesh-gradient-bg border-t border-secondary/10 pt-16 pb-10">
       <div className="container-site">
         {/* Main grid */}
-        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10 mb-12">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-10 mb-12">
           {/* Brand */}
           <div className="flex flex-col gap-4 max-w-xs">
             <Image

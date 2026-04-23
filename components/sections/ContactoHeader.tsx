@@ -14,12 +14,12 @@ export function ContactoHeader() {
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          className="max-w-4xl"
+          className="max-w-2xl"
         >
-          <motion.h1 variants={fadeUp} className="text-gray-900 mb-6">
+          <motion.h2 variants={fadeUp} className="text-gray-900 leading-tight mb-6">
             {t('title1')}{' '}
             <span className="text-gradient-primary">{t('titleHighlight')}</span>
-          </motion.h1>
+          </motion.h2>
           <motion.p variants={fadeUp} className="max-w-2xl text-secondary">
             {t('subtitle')}
           </motion.p>

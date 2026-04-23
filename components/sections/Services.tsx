@@ -48,7 +48,7 @@ export function Services() {
         </motion.div>
 
         {/* Cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {cards.map((card) => (
             <ServiceCard
               key={card.titleKey}
