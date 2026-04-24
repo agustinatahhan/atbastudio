@@ -50,10 +50,10 @@ export function Hero() {
           variants={fadeUp}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Link href="/proyectos" className="btn-outline h-12">
+          <Link href="/proyectos" className="btn-outline h-12 w-full sm:w-56 justify-center">
             {t("ctaPrimary")}
           </Link>
-          <Link href="/contacto" className="btn-primary  h-12">
+          <Link href="/contacto" className="btn-primary h-12 w-full sm:w-56 justify-center">
             {t("ctaSecondary")}
           </Link>
         </motion.div>

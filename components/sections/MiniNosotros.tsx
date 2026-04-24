@@ -38,7 +38,7 @@ export function MiniNosotros() {
             </motion.p>
             <motion.div variants={fadeUp}>
               <Link href="/sobre-nosotros" className="btn-primary">
-                {t("cta")} →
+                {t("cta")}
               </Link>
             </motion.div>
           </motion.div>

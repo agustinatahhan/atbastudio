@@ -13,8 +13,8 @@
       "titleHighlight": "un sitio web",
       "title2": "que te represente",
       "subtitle": "Diseñamos y desarrollamos sitios a medida, sin plantillas. Solo código propio, buen diseño y resultados reales",
-      "ctaPrimary": "Ver lo que hacemos",
-      "ctaSecondary": "Empecemos tu proyecto"
+      "ctaPrimary": "Nuestros trabajos",
+      "ctaSecondary": "Iniciá tu proyecto"
     },
     "About": {
       "label": "Nuestra visión",
@@ -75,7 +75,7 @@
       "label": "Quiénes somos",
       "title": "Diseño y código, en un solo equipo.",
       "body": "Trabajamos juntos desde el inicio de cada proyecto para que lo que se diseña sea exactamente lo que se construye. Sin intermediarios, sin malentendidos.",
-      "cta": "Conocé al equipo →",
+      "cta": "Conocé al equipo",
       "card1Role": "Desarrollo Web",
       "card1Name": "Agustina",
       "card1Desc": "Construyo soluciones eficientes, escalables y bien estructuradas.",
@@ -86,8 +86,8 @@
     "CTA": {
       "headline1": "¿Tenés un proyecto",
       "headline2": "en mente?",
-      "body": "Pedí tu presupuesto sin cargo y contanos sobre tu idea. Te respondemos en menos de 24 horas.",
-      "cta": "Pedí tu presupuesto gratis"
+      "body": "Contanos sobre tu idea y presupuestamos tu proyecto de manera gratuita.",
+      "cta": "Contactanos"
     },
     "Testimonials": {
       "label": "Lo que dicen de nosotros",
@@ -188,7 +188,15 @@
       "location": "Argentina",
       "budgetCta": "Pide tu presupuesto",
       "budgetNote": "Respuesta garantizada en menos de 24 horas.",
-      "follow": "Seguinos en nuestras redes"
+      "follow": "Nuestras redes",
+      "followSubtitle": "Seguinos, compartimos nuestro proceso, proyectos en curso y novedades del estudio.",
+      "nextStepsLabel": "Próximos pasos",
+      "nextStep1Title": "Revisamos tu consulta",
+      "nextStep1Desc": "Leemos tu mensaje, entendemos tu idea y pensamos cómo podemos ayudarte mejor.",
+      "nextStep2Title": "Te enviamos el presupuesto",
+      "nextStep2Desc": "En menos de 24 horas recibís una propuesta clara, sin letra chica ni compromisos.",
+      "nextStep3Title": "Arrancamos juntos",
+      "nextStep3Desc": "Si querés avanzar, coordinamos los detalles y empezamos a construir tu proyecto."
     }
   },
   "SobreNosotros": {

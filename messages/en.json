@@ -188,7 +188,15 @@
       "location": "Argentina",
       "budgetCta": "Request a quote",
       "budgetNote": "Guaranteed response within 24 hours.",
-      "follow": "Follow us on social media"
+      "follow": "Find us online",
+      "followSubtitle": "Follow us. We share our process, ongoing projects, and studio updates.",
+      "nextStepsLabel": "What happens next",
+      "nextStep1Title": "We review your message",
+      "nextStep1Desc": "We read your message, understand your idea, and think about how we can best help you.",
+      "nextStep2Title": "We send you a quote",
+      "nextStep2Desc": "Within 24 hours you'll receive a clear, no-strings-attached quote.",
+      "nextStep3Title": "We get started together",
+      "nextStep3Desc": "If you want to move forward, we coordinate the details and kick off your project."
     }
   },
   "SobreNosotros": {

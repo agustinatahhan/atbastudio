@@ -67,9 +67,9 @@ export function ProyectosGrid() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-outline"
+                      className="btn-primary"
                     >
-                      {locale === "es" ? "Ver proyecto en vivo →" : "See it live →"}
+                      {locale === "es" ? "Conocé el proyecto" : "See it live"}
                     </a>
                   </div>
                 </motion.article>
