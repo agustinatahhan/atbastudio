@@ -13,7 +13,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 md:py-32 bg-surface/40">
+    <section className="py-24 md:py-32 mesh-gradient-bg ">
       <div className="container-site">
         <motion.div
           variants={staggerContainer}

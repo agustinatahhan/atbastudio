@@ -15,7 +15,7 @@ export function Testimonials() {
   const t = useTranslations("Home.Testimonials");
 
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-surface/40">
       <div className="container-site">
         <motion.div
           variants={staggerContainer}
@@ -64,6 +64,7 @@ export function Testimonials() {
           ))}
         </motion.div>
       </div>
+      
     </section>
   );
 }

@@ -44,9 +44,7 @@ export default function HomePage() {
       <Pillars />
       <Services />
       <Projects />
-      <MiniNosotros />
       <Testimonials />
-      <FAQ />
       <CTA />
     </>
   );

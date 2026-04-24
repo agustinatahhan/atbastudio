@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import ContactForm from "./ContactForm";
 import { RiInstagramLine, RiCheckLine, RiMailLine } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FAQ } from "./FAQ";
 
 const steps = [
   { num: "01", titleKey: "nextStep1Title", descKey: "nextStep1Desc" },
@@ -107,6 +108,8 @@ export function ContactoForm() {
 
         </div>
       </div>
+            <FAQ />
+      
     </section>
   );
 }
